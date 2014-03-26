@@ -1296,7 +1296,7 @@ li:hover .footer-menu__item-7 {
 
 .br__item__photo {
     width: 60px;
-    height: 60px;
+    height: auto;
     margin-right: 5px;
 }
 
@@ -1579,7 +1579,7 @@ li:hover .footer-menu__item-7 {
 
 .catalog__item__photo {
     width: 90px;
-    height: 90px;
+    height: auto;
     margin-right: 10px;
 }
 .vam-div * {
