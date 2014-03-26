@@ -175,4 +175,7 @@ $(document).ready(function ($) {
         var w = window.innerWidth - 1200;
         $('.basket__desktop__catalog__tabs::after').width(w);
     })
+    $('.js-catalog-popup').click(function(){
+      $('#br-items').show();
+    })
 });

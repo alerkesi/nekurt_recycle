@@ -86,7 +86,7 @@ a {
     min-width: 1000px;
 }
 
-.basket div, .basket span, .basket i, .basket input, .basket label, .basket ul, .basket form{
+.basket div, .basket span, .basket i, .basket input, .basket label, .basket ul, .basket form, .basket li {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -201,11 +201,16 @@ ul.list-none {
 .old-price + .new-price {
     margin-top: 0;
 }
-
+.counter + .new-price {
+    margin-top: 32px;
+}
+.counter {
+    overflow: hidden;
+    white-space: nowrap;
+}
 .new-price {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 32px;
 }
 
 .old-price {
@@ -1190,7 +1195,7 @@ li:hover .footer-menu__item-7 {
 
 .product__item__photo {
     width: 140px;
-    height: auto;
+    height: 140px;
     margin-right: 20px;
 }
 
@@ -1296,7 +1301,7 @@ li:hover .footer-menu__item-7 {
 
 .br__item__photo {
     width: 60px;
-    height: auto;
+    height: 60px;
     margin-right: 5px;
 }
 
@@ -1579,9 +1584,54 @@ li:hover .footer-menu__item-7 {
 
 .catalog__item__photo {
     width: 90px;
-    height: auto;
+    height: 90px;
     margin-right: 10px;
 }
 .vam-div * {
     vertical-align: middle;
+}
+
+.popup {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    /*-moz-transform: translate(-50%, -50%);*/
+    top: 10%;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    z-index: 3000;
+    background-color: #fff;
+
+    padding: 15px;
+}
+.popup-close i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background-position: -100 -100;
+}
+.catalog-title i {
+    width: 30px;
+    height: 45px;
+    background-position: -10 -10;
+
+}
+.catalog-item {
+    width: 45%;
+    padding: 15px;
+}
+.catalog-item:nth-child(2n) {
+    margin-left: 10%;
+}
+.catalog-item div:nth-child(1) {
+    width: 35%;
+}
+.catalog-item div:nth-child(2){
+    width: 60%;
+    margin-left: 5%;
 }
