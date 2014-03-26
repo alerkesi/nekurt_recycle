@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="" name="keywords"/>
+    <meta content="" name="description"/>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/basket.js" type="text/javascript"></script>
+    <!--<script src="js/basket_1.js" type="text/javascript"></script>-->
+    <script src="js/chosen.jquery.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/hint.css" type="text/css">
+    <link rel="stylesheet" href="css/basket.css" type="text/css">
+    <link rel="stylesheet" href="css/chosen.css" type="text/css">
+</head>
+<body class="basket">
+<div class="basket__container">
+<div class="basket__content">
+<div class="basket__header">
+    <div class="basket__header__bg">
+        <div class="flt-l">
+            <span class="v-helper"></span>
+            <a href="javascript:void(0)"><i class="header__logo"></i></a>
+			<span class="header__city"><span class="js-region">Москва и область</span>&nbsp;(<a
+                    href="javascript:void(0)" class="dotted-link gold">изменить</a>)</span>
+        </div>
+        <div class="flt-r">
+            <span class="v-helper"></span>
+            <span class="header__onestep vam"><span>1 шаг до покупки</span><i></i></span>
+			<span class="header__total">Сумма заказа <span
+                    class="total-amount">58 000 &#8399;</span></span>
+            <button class="button button-complete">Оформить</button>
+            <button class="button button-dark"><span
+                    class="dotted-link">Оформить в 1 клик</span></button>
+        </div>
+    </div>
+</div>
+<div class="basket__desktop">
+<div class="title basket__desktop__title"><span class="vam">Корзина</span><i class="vam"></i></div>
+<div class="vam-div"><span>У вас в корзине </span><span class="bold">3 товара</span><span> на общую сумму </span><span class="bold">58 000 &#8399;</span>
+    <a href="" class="remove red flt-r"><i class="vam"></i><span
+            class="dotted-link vam">Очистить весь список</span></a>
+</div>
+<div><a href="" class="underline-link bl back vam"><i></i><span class="vam"> Вернуться в магазин</span></a>
+</div>
+<ul class="basket__desktop__list list-none">
+    <li class="basket__desktop__list__item clearfix">
+        <div class="product__item flt-l">
+            <div class="product__item__left flt-l">
+                <img class="product__item__photo" src="images/dog_drug.png" alt=""/>
+            </div>
+            <div class="flt-l product__item__main">
+                <a href="javascript:void(0)" class="product__item__name underline-link bl">Смартфон Apple iPhone
+                    5S 32GB Silver Drilver Popepe GUoasdf jasodpf</a>
+
+                <div class="product__item__art">Артикул: 674739 (с2)</div>
+                <div class="presence presence__yes">Есть в наличии</div>
+                <br>
+
+                <div class="product__item__options">
+                    <div class="input__option">
+                        <input id="p1-c1" type="checkbox" name="checkbox" hidden/>
+                        <label for="p1-c1"
+                               class="for-checkbox"><i></i><span>Застраховать от кражи, от</span><span
+                                class="bold">&nbsp;58 000 &#8399;</span></label>
+                        <i class="qst vam js-qst-strah hint--top" data-hint="Это страхуем!"></i>
+                    </div>
+                    <div class="input__option">
+                        <input id="p1-c2" type="checkbox" name="checkbox" hidden/>
+                        <label for="p1-c2"
+                               class="for-checkbox"><i></i><span>Установить приложеня из Топ-100 за</span><span
+                                class="bold">&nbsp;8 000 &#8399;</span></label>
+                        <i class="qst vam js-qst-ist hint--top" data-hint="Энгри бердс за наш счет!"></i>
+                    </div>
+                    <div class="input__option">
+                        <input id="p1-c3" type="checkbox" name="checkbox" hidden/>
+                        <label for="p1-c3"
+                               class="for-checkbox"><i></i><span>Дополнительная гарантия на 2 года от</span>
+                            <span class="bold">&nbsp;8 000 &#8399;</span></label>
+                        <i class="qst vam js-qst-gar hint--top" data-hint="Это как будто мы гарантируем!"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flt-r product__item__right">
+                <div class="counter clearfix">
+                    <a href="javascript:void(0)" class="add"><i></i></a>
+                    <input value="1">
+                    <a href="javascript:void(0)" class="deduct disabled"><i></i></a>
+                    <a class="counter__price"><span class="vam js-product-price">100 500 &#8399;</span><i></i></a>
+                </div>
+                <div class="old-price"><span class="ltr">32 990</span> &#8399;</div>
+                <div class="new-price js-product-total-price">29 999 &#8399;</div>
+                <button class="button button-del">Удалить</button>
+            </div>
+        </div>
+        <ul class="br__items clearfix flt-l list-none">
+            <div class="br__items__triangle"></div>
+            <div class="br__items__title">- Вай, брат, давай давай</div>
+            <li class="br__item clearfix">
+                <div class="flt-l br__item__left">
+                    <img class="br__item__photo" src="Pichaaa.png" alt=""/>
+                </div>
+                <div class="flt-l br__item__right">
+                    <a href="javascript:void(0)" class="br__item__name underline-link bl">Чехол для Смартфон
+                        Apple iPhone 5S 32GB Silver</a>
+
+                    <div class="br__item__description">Для надежной защиты твоего Ойфона от ударов и царапин
+                    </div>
+                    <div class="br__bott">
+                        <div>
+                            <span class="br__item__price bold">2 560 &#8399;</span>
+                            <button class="button button-add">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="br__item clearfix">
+                <div class="flt-l br__item__left">
+                    <img class="br__item__photo" src="Pichaaa.png" alt=""/>
+                </div>
+                <div class="flt-l br__item__right">
+                    <a href="javascript:void(0)" class="br__item__name underline-link bl">Чехол для Смартфон
+                        Apple iPhone 5S 32GB Silver</a>
+
+                    <div class="br__item__description">Для надежной защиты твоего Ойфона от ударов и царапин
+                    </div>
+                    <div class="br__bott">
+                        <div>
+                            <span class="br__item__price bold">2 560 &#8399;</span>
+                            <button class="button button-add">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="br__item clearfix">
+                <div class="flt-l br__item__left">
+                    <img class="br__item__photo" src="Pichaaa.png" alt=""/>
+                </div>
+                <div class="flt-l br__item__right">
+                    <a href="javascript:void(0)" class="br__item__name underline-link bl">Чехол для Смартфон
+                        Apple iPhone 5S 32GB Silver</a>
+
+                    <div class="br__item__description">Для надежной защиты твоего Ойфона от ударов и царапин
+                    </div>
+                    <div class="br__bott">
+                        <div>
+                            <span class="br__item__price bold">2 560 &#8399;</span>
+                            <button class="button button-add">Добавить</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="br__bott"><a href="javascript:void(0)" class="dotted-link bl s13">Все полезные штуки (20)</a>
+            </div>
+        </ul>
+    </li>
+
+
+</ul>
+<hr class="dotted-line">
+<div class="basket__desktop__credit__bg">
+    <div class="basket__desktop__credit">
+        <input id="cred" type="checkbox" name="checkbox" hidden/>
+        <label for="cred" class="for-checkbox credit-label"><i></i><span>Оформить кредит за&nbsp;</span><span
+                class="bold">8 000 &#8399;</span><span>&nbsp;в месяц</span></label>
+
+        <div class="details s13">После заполнения <span class="italic">контактных данных, </span>с вами свяжутся
+            представители банка для оформления кредита.
+        </div>
+    </div>
+</div>
+<hr class="dotted-line bottom-line">
+<div class="clearfix basket__desktop__footer">
+    <div class="flt-l">
+        <div class="details">Если у вас есть <span class="dotted-link italic hint--top" data-hint="Поставь ка промокод
+			сюда, дружочек">промокод</span>, укажите его в поле:
+        </div>
+        <div style="margin-bottom: 14px;"><input type="text" class="vam form-input promo">
+            <button class="vam button button-promo">Пересчитать</button>
+        </div>
+        <div class="details">Наши бонусные партнеры:</div>
+        <div>
+            <a href="" class="malina-loyal"></a>
+            <a href="" class="spasibo-loyal"></a>
+        </div>
+    </div>
+    <div class="flt-r confirm-area">
+        <div>
+            <span class="form-footer__total">Итого: </span><span
+                class="bold footer-form__total-amount">58 000 &#8399;</span>
+        </div>
+        <div>
+            <span class="terms">Без учета стоимости доставки</span>
+        </div>
+        <a href="javascript:void(0)"><i class="big-button-fill"></i></a>
+
+        <div><a class="dotted-link bl one-click-link">Оформить в 1 клик</a></div>
+        <div><span class="terms">Наш менеджер сам перезвонит вам и уточнит все детали заказа по телефону</span>
+        </div>
+    </div>
+</div>
+<hr class="dotted-line">
+<div>
+    <div class="basket__desktop__catalog__line">
+        <div class="basket__desktop__catalog__tabs">
+            <ul class="basket__desktop__catalog list-none">
+                <li class="catalog__item">
+                    <!--Выключен бордер для первого элемента-->
+                    <!--<div class="catalog__item__lborder"></div>-->
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item__lborder"></div>
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item__lborder"></div>
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item__lborder"></div>
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item__lborder"></div>
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item__lborder"></div>
+                    <img src="Pichaaa.png" alt="" class="flt-l catalog__item__photo">
+                    <a href="" class="catalog__item__name underline-link bl">Машинка для выброса загрязнений
+                        воздуха</a>
+
+                    <div class="bott">
+                        <span class="bold catalog__item__price">58 000 &#8399;</span>
+                        <button class="button button-add catalog__item__add">Добавить</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="catalog__kulisa"></div>
+        </div>
+        <a href="javascript:void(0)" class="arrow basket__desktop__catalog__arrow-forward"><i></i></a>
+        <a href="javascript:void(0)" class="arrow basket__desktop__catalog__arrow-back"><i></i></a>
+    </div>
+</div>
+<hr class="dotted-line bottom-line">
+<div><a href="" class="underline-link bl">Вернуться в магазин</a></div>
+</div>
+</div>
+
+</div>
+
+<footer class="basket__footer top-shadow">
+    <div class="basket__footer__bg">
+        <div class="footer__verdict">Мы охуенны</div>
+        <div class="footer-menu">
+            <ul class="list-none footer__list">
+                <li>
+                    <i class="footer-menu__item footer-menu__item-1 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-2 js-link"></i>
+
+                    <div>Ассортимент и низкие цены</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-3 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-4 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-5 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-6 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-7 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright footer__text">&#169; 2014 Интернет-магазин бытовой техники
+            <a href="http://www.electrovenik.ru" class="link underline-link">Электровеник.ру</a></div>
+        <div class="pay-systems">
+            <i class="pay"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

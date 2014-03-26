@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="" name="keywords"/>
+    <meta content="" name="description"/>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/basket.js" type="text/javascript"></script>
+    <!--<script src="js/basket_2.js" type="text/javascript"></script>-->
+    <script src="js/chosen.jquery.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/hint.css" type="text/css">
+    <link rel="stylesheet" href="css/basket.css" type="text/css">
+    <link rel="stylesheet" href="css/chosen.css" type="text/css">
+</head>
+<body class="basket">
+<div class="basket__container">
+<div class="basket__content">
+<div class="basket__header">
+    <div class="basket__header__bg">
+        <div class="flt-l">
+            <span class="v-helper"></span>
+            <a href="javascript:void(0)"><i class="header__logo"></i></a>
+            <span class="header__city"><span class="js-region">Москва и область</span>&nbsp;(<a
+                    href="javascript:void(0)" class="dotted-link gold">изменить</a>)</span>
+        </div>
+        <div class="flt-r">
+            <span class="v-helper"></span>
+            <span class="header__total">Оформление заказа на сумму <span
+                    class="total-amount">58 000 &#8399;</span></span>
+            <button class="button button-complete">Завершить оформление</button>
+        </div>
+    </div>
+</div>
+<form class="basket__form">
+<div class="form-title">Оформление заказа на сумму <span class="bold">78 180 &#8399;</span>. Ещё совсем
+    чуть-чуть :-)
+</div>
+<div class="form-row">
+    <label class="form-label"></label>
+    <span class="bold"><i class="big-ast"></i>&nbsp;Поля обязательны для заполнения</span>
+</div>
+<div class="form-row">
+    <label class="form-label">Я покупаю<span class="ast">*</span></label>
+    <span class="tab left-tab selected"><a class="dotted-link blue">себе</a></span>
+    <span class="tab right-tab"><a class="dotted-link blue">для компании</a></span>
+</div>
+<div class="form-row hidden" id="cN">
+    <label class="form-label">Компания</label>
+    <input type="text" class="form-input" placeholder="Касперский лаб">
+</div>
+<div class="form-row">
+    <label class="form-label">Имя<span class="ast">*</span></label>
+    <input required type="text" class="form-input" placeholder="Константин">
+    <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваше имя</span></span>
+</div>
+<div class="form-row">
+    <label class="form-label">Фамилия<span class="ast">*</span></label>
+    <input required type="text" class="form-input" placeholder="Константинопольский">
+    <span class="vam alert hidden"><i></i><span>Вы забыли указать Вашу фамилию</span></span>
+</div>
+<div class="form-row">
+    <label class="form-label">Номер телефона<span class="ast">*</span></label>
+
+    <div>
+        <input required type="tel" class="form-input short-input" placeholder="+7 (910) 000-01-01"
+               pattern="([\+][0-9]{1,3}([ \.\-])?)?([\(]{1}[0-9]{3}[\)])?([0-9A-Z \.\-]{1,32})((x|ext|extension)?[0-9]{1,4}?)">
+        <a id="add-number" href="javascript:void(0)" class="dotted-link blue vam">добавить номер</a>
+        <span class="vam alert hidden"><i></i><span>Ошибка в номере телефона</span></span>
+    </div>
+    <div id="phone2" class="added-number" style="display: none;">
+        <input type="tel" class="form-input short-input" placeholder="+7 (495) 000-01-01"
+               pattern="([\+][0-9]{1,3}([ \.\-])?)?([\(]{1}[0-9]{3}[\)])?([0-9A-Z \.\-]{1,32})((x|ext|extension)?[0-9]{1,4}?)">
+        <a id="remove-number" href="javascript:void(0)" class="dotted-link blue vam">удалить номер</a>
+        <span class="vam alert hidden"><i></i><span>Ошибка в номере телефона</span></span>
+    </div>
+</div>
+<div class="form-row">
+    <label class="form-label">Электронная почта</label>
+    <input type="text" class="form-input js-focus-input" placeholder="k.konstantinopolskiy@pochta.ru"
+           pattern="((([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?">
+    <span class="vam alert hidden"><i></i><span>Ошибка в адресе электронной почты</span></span>
+
+    <div class="input__option disabled">
+        <input id="c1" type="checkbox" name="checkbox" disabled checked hidden/>
+        <label for="c1"
+               class="for-checkbox"><i></i><span>Хочу получать информацию об акциях и скидках</span></label>
+    </div>
+</div>
+<div class="form-row">
+    <label class="form-label">Город<span class="ast">*</span></label>
+        <span class="vam"><span class="bold js-city">Москва</span>&nbsp;(<a href="javascript:void(0)"
+                                                                            class="dotted-link blue">изменить</a>)</span>
+</div>
+<div class="form-row">
+    <label class="form-label radio-label">Способ доставки<span class="ast">*</span></label>
+    <ul class="list-none">
+        <li>
+            <input id="r1" type="radio" name="radio1" checked hidden/>
+            <label for="r1" class="basket__radio"><i class="radiobutton"></i><span>Курьером за </span><span
+                    class="bold js-price-cour">300 &#8399;</span></label>
+        </li>
+        <li>
+            <input id="r2" type="radio" name="radio1" hidden/>
+            <label for="r2" class="basket__radio"><i
+                    class="radiobutton"></i><span>Экспресс-доставка за 4 часа </span><span
+                    class="bold js-price-expr">450 &#8399;</span><i class="qst js-qst hint--top js-qst-exp"
+                                                                    data-hint="Это очень быстро приедем"></i></label>
+        </li>
+        <li>
+            <input id="r3" type="radio" name="radio1" hidden/>
+            <label for="r3" class="basket__radio"><i class="radiobutton"></i><span>Вип-доставка с сокращенным интервалом ожидания до 3 часов </span><span
+                    class="bold js-price-vip">650 &#8399;</span><i class="qst js-qst hint--top js-qst"
+                                                                   data-hint="Это очень быстро приедем"></i></label>
+        </li>
+        <li>
+            <input id="r4" type="radio" name="radio1" hidden/>
+            <label for="r4" class="basket__radio"><i
+                    class="radiobutton"></i><span>Доставка в почтомат </span><span
+                    class="bold js-price-post">20 &#8399;</span><span> (132 пункта по Москве)</span><i
+                    class="qst js-qst hint--top js-qst" data-hint="Это очень быстро приедем"></i></label>
+        </li>
+        <li id="selfy">
+            <input id="r5" type="radio" name="radio1" hidden/>
+            <label for="r5" class="basket__radio"><i class="radiobutton"></i><span>Самовывоз </span><span
+                    class="bold js-price-self">100 &#8399;</span></label>
+            <br>
+            <ul class="list-none metro-list">
+                <li class="metro-list__item"><i id="line-0" class="metro-pic"></i><span>Белый значок</span></li>
+                <li class="metro-list__item"><i id="line-1" class="metro-pic"></i><span>Французская</span></li>
+                <li class="metro-list__item"><i id="line-2" class="metro-pic"></i><span>Казахская</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<hr class="grad">
+<div id="or1" class="or">
+    <div class="form-row">
+        <label class="form-label">Время доставки<span class="ast">*</span></label>
+        <select id="or1-day" class="form-select long-select">
+            <option value="">Завтра, 22 февраля</option>
+            <option value="">Завтра, 23 февраля</option>
+            <option value="">Завтра, 24 февраля</option>
+            <option value="">Завтра, 25 февраля</option>
+        </select>
+        <select id="or1-time" class="form-select norm-select">
+            <option value="">с 8 до 15</option>
+            <option value="">с 15 до 24</option>
+            <option value="">с 00 до 24</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Адрес доставки<span class="ast">*</span></label>
+        <input required type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+    </div>
+    <div class="form-row">
+        <label class="form-label radio-label">Дополнительные услуги</label>
+        <ul class="list-none">
+            <li>
+                <input id="or1-d1" type="radio" name="or1-r" checked hidden/>
+                <label for="or1-d1" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на лифте - </span><span
+                        class="bold">бесплатно</span></label>
+            </li>
+            <li>
+                <input id="or1-d2" type="radio" name="or1-r" hidden/>
+                <label for="or1-d2" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
+                                                                                         class="form-input"
+                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                        class="bold js-price-vip">650 &#8399;</span></label>
+            </li>
+            <li>
+                <input id="or1-d3" type="radio" name="or1-r" hidden/>
+                <label for="or1-d3" class="basket__radio"><i
+                        class="radiobutton"></i><span>Доставить до подъезда</span></label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="or2" class="or hidden">
+    <div class="form-row">
+        <label class="form-label">Время доставки<span class="ast">*</span></label>
+        <span class="vam">Доставим в течение 4 часов с момента, как вы завершите оформление заказа</span>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Адрес доставки<span class="ast">*</span></label>
+        <input type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+    </div>
+    <div class="form-row">
+        <label class="form-label radio-label">Дополнительные услуги</label>
+        <ul class="list-none">
+            <li>
+                <input id="or2-d1" type="radio" name="or2-r" checked hidden/>
+                <label for="or2-d1" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на лифте - </span><span
+                        class="bold">бесплатно</span></label>
+            </li>
+            <li>
+                <input id="or2-d2" type="radio" name="or2-r" hidden/>
+                <label for="or2-d2" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
+                                                                                         class="form-input"
+                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                        class="bold js-price-vip">650 &#8399;</span></label>
+            </li>
+            <li>
+                <input id="or2-d3" type="radio" name="or2-r" hidden/>
+                <label for="or2-d3" class="basket__radio"><i
+                        class="radiobutton"></i><span>Доставить до подъезда</span></label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="or3" class="or hidden">
+    <div class="form-row">
+        <label class="form-label">Время доставки<span class="ast">*</span></label>
+        <select id="or3-day1" class="form-select long-select">
+            <option value="">Завтра, 22 февраля</option>
+            <option value="">Завтра, 23 февраля</option>
+            <option value="">Завтра, 24 февраля</option>
+            <option value="">Завтра, 25 февраля</option>
+        </select>
+        <select id="or3-time1" class="form-select norm-select">
+            <option value="">с 11 до 14</option>
+            <option value="">с 14 до 17</option>
+            <option value="">с 17 до 20</option>
+            <option value="">с 20 до 24</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Адрес доставки<span class="ast">*</span></label>
+        <input type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+    </div>
+    <div class="form-row">
+        <label class="form-label radio-label">Дополнительные услуги</label>
+        <ul class="list-none">
+            <li>
+                <input id="or3-d1" type="radio" name="or3-r" checked hidden/>
+                <label for="or1-d1" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на лифте - </span><span
+                        class="bold">бесплатно</span></label>
+            </li>
+            <li>
+                <input id="or3-d2" type="radio" name="or3-r" hidden/>
+                <label for="or1-d2" class="basket__radio"><i
+                        class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
+                                                                                         class="form-input"
+                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                        class="bold js-price-vip">650 &#8399;</span></label>
+            </li>
+            <li>
+                <input id="or3-d3" type="radio" name="or3-r" hidden/>
+                <label for="or1-d3" class="basket__radio"><i
+                        class="radiobutton"></i><span>Доставить до подъезда</span></label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="or4" class="or hidden">
+    <div class="form-row">
+        <label class="form-label">Адрес почтомата</label>
+            <span class="vam js-post-address-bind">ул. Мясницко-Раменская д.12 кв.111 (<a href="javascript:void(0)"
+                                                                                          class="dotted-link blue">изменить</a>)</span>
+    </div>
+    <div class="form-row">
+        <label class="form-label">День доставки в почтомат<span class="ast">*</span></label>
+        <select id="or4-day1" class="form-select long-select">
+            <option value="">Завтра, 22 февраля</option>
+            <option value="">Завтра, 23 февраля</option>
+            <option value="">Завтра, 24 февраля</option>
+            <option value="">Завтра, 25 февраля</option>
+        </select>
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Важная информация<span class="ast">!</span></label>
+            <span class="vam">Информация, необходимая для получения вашего заказа через почтомат (пин-код, адрес, информация о сроках
+            получения заказа), будет отправлена вам на электронную почту и в SMS-сообщении.</span>
+    </div>
+</div>
+<div id="or5" class="or hidden">
+    <div class="form-row">
+        <label class="form-label">Удобное Вам метро</label>
+        <select id="or5-metro" class="form-select long-select">
+            <option value="">Калуга</option>
+            <option value="">Барыга</option>
+            <option value="">Нефтезаводская</option>
+            <option value="">Пролетарская над гнездом кукушкинская</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Адрес доставки<span class="ast">*</span></label>
+            <span class="vam"><span class="js-metro-address-bind">ул. Мясницко-Раменская д.12 кв.111</span> (<a
+                    class="dotted-link blue">посмотреть на карте</a>)</span>
+    </div>
+    <div class="form-row">
+        <label class="form-label">День самовывоза<span class="ast">*</span></label>
+        <select id="or5-day1" class="form-select long-select">
+            <option value="">Завтра, 22 февраля</option>
+            <option value="">Завтра, 23 февраля</option>
+            <option value="">Завтра, 24 февраля</option>
+            <option value="">Завтра, 25 февраля</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label class="form-label">Важная информация<span class="ast">!</span></label>
+            <span class="vam">Прежде чем приехать в пункт самовывоза за своим заказом, узнайте о его готовности
+                у наших операторов. Вы сможете оплатить смтоимость товара и доставки заранее по безналичному расчету
+                или наличными прямо в пункте самовывоза.</span>
+    </div>
+</div>
+<hr class="grad">
+<div id="pr1" class="pr">
+    <div class="form-row">
+        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <ul class="list-none">
+            <li>
+                <input id="pr1-b1" type="radio" name="pr1-r" checked hidden/>
+                <label for="pr1-b1" class="basket__radio"><i
+                        class="radiobutton"></i><span>Наличными курьеру</span></label>
+            </li>
+            <li>
+                <input id="pr1-b2" type="radio" name="pr1-r" hidden/>
+                <label for="pr1-b2" class="basket__radio"><i
+                        class="radiobutton"></i><span>Картой курьеру</span></label>
+            </li>
+            <li>
+                <input id="pr1-b3" type="radio" name="pr1-r" hidden/>
+                <label for="pr1-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
+                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+            </li>
+            <li>
+                <input id="pr1-b4" type="radio" name="pr1-r" hidden/>
+                <label for="pr1-b4" class="basket__radio"><i
+                        class="radiobutton"></i><span>Электронными деньгами</span><i
+                        class="qst js-qst hint--top js-qst-emoney" data-hint="Это электронные деньги"></i></label>
+            </li>
+            <li>
+                <input id="pr1-b5" type="radio" name="pr1-r" hidden/>
+                <label for="pr1-b5" class="basket__radio"><i class="radiobutton"></i><span>Безналичный расчет</span><i
+                        class="qst js-qst hint--top js-qst-beznal" data-hint="Это безналичные"></i></label>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="pr2" class="pr hidden">
+    <div class="form-row">
+        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <ul class="list-none">
+            <li>
+                <input id="pr2-b3" type="radio" name="pr2-r" checked hidden/>
+                <label for="pr2-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
+                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+            </li>
+            <li>
+                <input id="pr2-b4" type="radio" name="pr2-r" hidden/>
+                <label for="pr2-b4" class="basket__radio"><i
+                        class="radiobutton"></i><span>Электронными деньгами</span><i
+                        class="qst js-qst hint--top js-qst-emoney" data-hint="Это электронные деньги"></i></label>
+            </li>
+            <li>
+                <input id="pr2-b5" type="radio" name="pr2-r" hidden/>
+                <label for="pr2-b5" class="basket__radio"><i class="radiobutton"></i><span>Безналичный расчет</span><i
+                        class="qst js-qst hint--top js-qst-beznal" data-hint="Это безналичные"></i></label>
+            </li>
+        </ul>
+    </div>
+    <hr class="grad">
+    <div class="form-row">
+        <div class="js-card-online">Здесь могла бы быть ваша реклама</div>
+    </div>
+</div>
+<div id="pr3" class="pr hidden">
+    <div class="form-row">
+        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <ul class="list-none">
+            <li>
+                <input id="pr3-b3" type="radio" name="pr3-r" checked hidden/>
+                <label for="pr3-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
+                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+            </li>
+            <li>
+                <input id="pr3-b4" type="radio" name="pr3-r" hidden/>
+                <label for="pr3-b4" class="basket__radio"><i
+                        class="radiobutton"></i><span>Электронными деньгами</span><i
+                        class="qst js-qst hint--top js-qst-emoney" data-hint="Это электронные деньги"></i></label>
+            </li>
+            <li>
+                <input id="pr3-b5" type="radio" name="pr3-r" hidden/>
+                <label for="pr3-b5" class="basket__radio"><i class="radiobutton"></i><span>Безналичный расчет</span><i
+                        class="qst js-qst hint--top js-qst-beznal" data-hint="Это безналичные"></i></label>
+            </li>
+        </ul>
+    </div>
+    <hr class="grad">
+    <div class="form-row">
+        <div class="js-card-online">Здесь могла бы быть ваша реклама</div>
+    </div>
+</div>
+<div id="pr4" class="pr hidden">
+    <div class="form-row">
+        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <ul class="list-none">
+            <li>
+                <input id="pr4-b3" type="radio" name="pr4-r" checked hidden/>
+                <label for="pr4-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
+                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+            </li>
+            <li>
+                <input id="pr4-b4" type="radio" name="pr4-r" hidden/>
+                <label for="pr4-b4" class="basket__radio"><i
+                        class="radiobutton"></i><span>Электронными деньгами</span><i
+                        class="qst js-qst hint--top js-qst-emoney" data-hint="Это электронные деньги"></i></label>
+            </li>
+            <li>
+                <input id="pr4-b5" type="radio" name="pr4-r" hidden/>
+                <label for="pr4-b5" class="basket__radio"><i class="radiobutton"></i><span>Безналичный расчет</span><i
+                        class="qst js-qst hint--top js-qst-beznal" data-hint="Это безналичные"></i></label>
+            </li>
+        </ul>
+    </div>
+    <hr class="grad">
+    <div class="form-row">
+        <div class="js-card-online">Здесь могла бы быть ваша реклама</div>
+    </div>
+</div>
+<div id="pr5" class="pr hidden">
+    <div class="form-row">
+        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <ul class="list-none">
+            <li>
+                <input id="pr5-b3" type="radio" name="pr5-r" checked hidden/>
+                <label for="pr5-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
+                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+            </li>
+            <li>
+                <input id="pr5-b4" type="radio" name="pr5-r" hidden/>
+                <label for="pr5-b4" class="basket__radio"><i
+                        class="radiobutton"></i><span>Электронными деньгами</span><i
+                        class="qst js-qst hint--top js-qst-emoney" data-hint="Это электронные деньги"></i></label>
+            </li>
+            <li>
+                <input id="pr5-b5" type="radio" name="pr5-r" hidden/>
+                <label for="pr5-b5" class="basket__radio"><i class="radiobutton"></i><span>Безналичный расчет</span><i
+                        class="qst js-qst hint--top js-qst-beznal" data-hint="Это безналичные"></i></label>
+            </li>
+        </ul>
+    </div>
+    <hr class="grad">
+    <div class="form-row">
+        <div class="js-card-online">Здесь могла бы быть ваша реклама</div>
+    </div>
+</div>
+
+<hr class="grad">
+<div class="form-row">
+    <label class="form-label textarea-label">Комментарии по заказу</label>
+    <span class="form-label textarea-label label-legend">Здесь вы можете указать удобное время звонка и прочие тонкости по заказу</span>
+    <textarea class="form-input long-input" rows="4" maxlength="250"></textarea>
+</div>
+<hr class="dotted-line">
+<div class="form-row" id="loyal">
+    <label class="form-label">Программа лояльности</label>
+    <select class="form-select short-select">
+        <option id="partner1">&nbsp;</option>
+        <option id="partner2">&nbsp;</option>
+    </select>
+    <input type="text" class="form-input short-input" id="discount" value="" placeholder="46478 34834 9834 782">
+</div>
+<hr class="dotted-line">
+<div class="form-footer clearfix">
+    <div class="flt-r confirm-area">
+        <div>
+            <span class="form-footer__total">Итого: </span><span
+                class="bold footer-form__total-amount">58 000 &#8399;</span>
+        </div>
+        <div>
+            <span class="terms">С учетом доставки, всех скидок и бонусов</span>
+        </div>
+        <a href="javascript:void(0)"><i class="big-button-complete"></i></a>
+
+        <div class="terms">Нажимая кнопку «Завершить оформление» — вы соглашаетесь с <a class="link underline-link">Условиями
+            продажи товаров</a></div>
+    </div>
+</div>
+</form>
+
+</div>
+</div>
+<footer class="basket__footer top-shadow">
+    <div class="basket__footer__bg">
+        <div class="footer__verdict">Мы охуенны</div>
+        <div class="footer-menu">
+            <ul class="list-none footer__list">
+                <li>
+                    <i class="footer-menu__item footer-menu__item-1 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-2 js-link"></i>
+
+                    <div>Ассортимент и низкие цены</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-3 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-4 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-5 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-6 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+                <li>
+                    <i class="footer-menu__item footer-menu__item-7 js-link"></i>
+
+                    <div>Доставка на следующий день</div>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright footer__text">&#169; 2014 Интернет-магазин бытовой техники
+            <a href="http://www.electrovenik.ru" class="link underline-link">Электровеник.ру</a></div>
+        <div class="pay-systems">
+            <i class="pay"></i>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
