@@ -48,37 +48,37 @@
 </div>
 <div class="form-row hidden" id="cN">
     <label class="form-label">Компания</label>
-    <input type="text" class="form-input" placeholder="Касперский лаб">
+    <input type="text" class="form-input" placeholder="Электровеник.ру">
 </div>
 <div class="form-row">
     <label class="form-label">Имя<span class="ast">*</span></label>
-    <input required type="text" class="form-input" placeholder="Константин">
-    <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваше имя</span></span>
+    <input required type="text" class="form-input" placeholder="Василий">
+    <span class="vam alert hidden"><i></i><span>Вы забыли указать ваше имя</span></span>
 </div>
 <div class="form-row">
     <label class="form-label">Фамилия<span class="ast">*</span></label>
-    <input required type="text" class="form-input" placeholder="Константинопольский">
-    <span class="vam alert hidden"><i></i><span>Вы забыли указать Вашу фамилию</span></span>
+    <input required type="text" class="form-input" placeholder="Уткин">
+    <span class="vam alert hidden"><i></i><span>Вы забыли указать вашу фамилию</span></span>
 </div>
 <div class="form-row">
     <label class="form-label">Номер телефона<span class="ast">*</span></label>
 
     <div>
-        <input required type="tel" class="form-input short-input" placeholder="+7 (910) 000-01-01"
+        <input required type="tel" class="form-input short-input" placeholder="+7 (900) 876-00-01"
                pattern="([\+][0-9]{1,3}([ \.\-])?)?([\(]{1}[0-9]{3}[\)])?([0-9A-Z \.\-]{1,32})((x|ext|extension)?[0-9]{1,4}?)">
         <a id="add-number" href="javascript:void(0)" class="dotted-link blue vam">добавить номер</a>
-        <span class="vam alert hidden"><i></i><span>Ошибка в номере телефона</span></span>
+        <span class="vam alert hidden"><i></i><span>Вы ошиблись или забыли указать свой номер телефона</span></span>
     </div>
     <div id="phone2" class="added-number" style="display: none;">
-        <input type="tel" class="form-input short-input" placeholder="+7 (495) 000-01-01"
+        <input type="tel" class="form-input short-input" placeholder="+7 (495) 555-00-01"
                pattern="([\+][0-9]{1,3}([ \.\-])?)?([\(]{1}[0-9]{3}[\)])?([0-9A-Z \.\-]{1,32})((x|ext|extension)?[0-9]{1,4}?)">
-        <a id="remove-number" href="javascript:void(0)" class="dotted-link blue vam">удалить номер</a>
-        <span class="vam alert hidden"><i></i><span>Ошибка в номере телефона</span></span>
+        <a id="remove-number" href="javascript:void(0)" class="dotted-link red vam">удалить</a>
+        <span class="vam alert hidden"><i></i><span>Вы ошиблись или забыли указать свой номер телефона</span></span>
     </div>
 </div>
 <div class="form-row">
     <label class="form-label">Электронная почта</label>
-    <input type="text" class="form-input js-focus-input" placeholder="k.konstantinopolskiy@pochta.ru"
+    <input type="text" class="form-input js-focus-input" placeholder="v.utkin@pochta.ru"
            pattern="((([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?">
     <span class="vam alert hidden"><i></i><span>Ошибка в адресе электронной почты</span></span>
 
@@ -106,20 +106,20 @@
             <label for="r2" class="basket__radio"><i
                     class="radiobutton"></i><span>Экспресс-доставка за 4 часа </span><span
                     class="bold js-price-expr">450 &#8399;</span><i class="qst js-qst hint--top js-qst-exp"
-                                                                    data-hint="Это очень быстро приедем"></i></label>
+                                                                    data-hint="Мы доставим вашу покупку в течении 4 часов после оформления заказа."></i></label>
         </li>
         <li>
             <input id="r3" type="radio" name="radio1" hidden/>
-            <label for="r3" class="basket__radio"><i class="radiobutton"></i><span>Вип-доставка с сокращенным интервалом ожидания до 3 часов </span><span
+            <label for="r3" class="basket__radio"><i class="radiobutton"></i><span>Вип-доставка </span><span
                     class="bold js-price-vip">650 &#8399;</span><i class="qst js-qst hint--top js-qst"
-                                                                   data-hint="Это очень быстро приедем"></i></label>
+                                                                   data-hint="Мы сократим интервал ожидания заказа до 3 часов."></i></label>
         </li>
         <li>
             <input id="r4" type="radio" name="radio1" hidden/>
             <label for="r4" class="basket__radio"><i
                     class="radiobutton"></i><span>Доставка в почтомат </span><span
-                    class="bold js-price-post">20 &#8399;</span><span> (132 пункта по Москве)</span><i
-                    class="qst js-qst hint--top js-qst" data-hint="Это очень быстро приедем"></i></label>
+                    class="bold js-price-post">20 &#8399;</span><i
+                    class="qst js-qst hint--top js-qst" data-hint="Мы доставим ваш заказ в удобный для вас почтомат. На выбор для вас 140 точек самовывоза по Москве."></i></label>
         </li>
         <li id="selfy">
             <input id="r5" type="radio" name="radio1" hidden/>
@@ -127,9 +127,9 @@
                     class="bold js-price-self">100 &#8399;</span></label>
             <br>
             <ul class="list-none metro-list">
-                <li class="metro-list__item"><i id="line-0" class="metro-pic"></i><span>Белый значок</span></li>
-                <li class="metro-list__item"><i id="line-1" class="metro-pic"></i><span>Французская</span></li>
-                <li class="metro-list__item"><i id="line-2" class="metro-pic"></i><span>Казахская</span></li>
+                <li class="metro-list__item"><i id="line-0" class="metro-pic"></i><span>Пражская</span></li>
+                <li class="metro-list__item"><i id="line-1" class="metro-pic"></i><span>Парк победы</span></li>
+                <li class="metro-list__item"><i id="line-2" class="metro-pic"></i><span>Автозаводская</span></li>
             </ul>
         </li>
     </ul>
@@ -140,20 +140,22 @@
         <label class="form-label">Время доставки<span class="ast">*</span></label>
         <select id="or1-day" class="form-select long-select">
             <option value="">Завтра, 22 февраля</option>
-            <option value="">Завтра, 23 февраля</option>
-            <option value="">Завтра, 24 февраля</option>
-            <option value="">Завтра, 25 февраля</option>
+            <option value="">Воскресенье, 23 февраля</option>
+            <option value="">Понедельник, 24 февраля</option>
+            <option value="">Вторник, 25 февраля</option>
+            <option value="">Среда, 26 февраля</option>
+            <option value="">Четверг, 27 февраля</option>
+            <option value="">Пятница, 28 февраля</option>
         </select>
         <select id="or1-time" class="form-select norm-select">
-            <option value="">с 8 до 15</option>
-            <option value="">с 15 до 24</option>
-            <option value="">с 00 до 24</option>
+            <option value="">с 11:00 до 18:00</option>
+            <option value="">с 18:00 до 23:00</option>
         </select>
     </div>
     <div class="form-row">
         <label class="form-label">Адрес доставки<span class="ast">*</span></label>
-        <input required type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
-        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+        <input required type="text" class="form-input long-input" placeholder="ул. Мясницкая, д. 1, кв. 1">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать адрес доставки</span></span>
     </div>
     <div class="form-row">
         <label class="form-label radio-label">Дополнительные услуги</label>
@@ -169,7 +171,7 @@
                 <label for="or1-d2" class="basket__radio"><i
                         class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
                                                                                          class="form-input"
-                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                                                                                         value="1"><span>этаж при отсутствии лифта </span><span
                         class="bold js-price-vip">650 &#8399;</span></label>
             </li>
             <li>
@@ -182,13 +184,13 @@
 </div>
 <div id="or2" class="or hidden">
     <div class="form-row">
-        <label class="form-label">Время доставки<span class="ast">*</span></label>
+        <label class="form-label">Время доставки<span class="ast"></span></label>
         <span class="vam">Доставим в течение 4 часов с момента, как вы завершите оформление заказа</span>
     </div>
     <div class="form-row">
         <label class="form-label">Адрес доставки<span class="ast">*</span></label>
-        <input type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
-        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+        <input type="text" class="form-input long-input" placeholder="ул. Мясницкая, д. 1, кв. 1">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать адрес доставки</span></span>
     </div>
     <div class="form-row">
         <label class="form-label radio-label">Дополнительные услуги</label>
@@ -204,7 +206,7 @@
                 <label for="or2-d2" class="basket__radio"><i
                         class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
                                                                                          class="form-input"
-                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                                                                                         value="1"><span>этаж при отсутствии лифта </span><span
                         class="bold js-price-vip">650 &#8399;</span></label>
             </li>
             <li>
@@ -218,23 +220,26 @@
 <div id="or3" class="or hidden">
     <div class="form-row">
         <label class="form-label">Время доставки<span class="ast">*</span></label>
-        <select id="or3-day1" class="form-select long-select">
+        <select id="or1-day" class="form-select long-select">
             <option value="">Завтра, 22 февраля</option>
-            <option value="">Завтра, 23 февраля</option>
-            <option value="">Завтра, 24 февраля</option>
-            <option value="">Завтра, 25 февраля</option>
+            <option value="">Воскресенье, 23 февраля</option>
+            <option value="">Понедельник, 24 февраля</option>
+            <option value="">Вторник, 25 февраля</option>
+            <option value="">Среда, 26 февраля</option>
+            <option value="">Четверг, 27 февраля</option>
+            <option value="">Пятница, 28 февраля</option>
         </select>
-        <select id="or3-time1" class="form-select norm-select">
-            <option value="">с 11 до 14</option>
-            <option value="">с 14 до 17</option>
-            <option value="">с 17 до 20</option>
-            <option value="">с 20 до 24</option>
+        <select id="or1-time" class="form-select norm-select">
+            <option value="">с 11:00 до 14:00</option>
+            <option value="">с 14:00 до 17:00</option>
+            <option value="">с 17:00 до 20:00</option>
+            <option value="">с 20:00 до 23:00</option>
         </select>
     </div>
     <div class="form-row">
         <label class="form-label">Адрес доставки<span class="ast">*</span></label>
-        <input type="text" class="form-input long-input" placeholder="ул. Мясницко-Раменская д.12 кв.111">
-        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
+        <input type="text" class="form-input long-input" placeholder="ул. Мясницкая, д. 1, кв. 1">
+        <span class="vam alert hidden"><i></i><span>Вы забыли указать адрес доставки</span></span>
     </div>
     <div class="form-row">
         <label class="form-label radio-label">Дополнительные услуги</label>
@@ -250,7 +255,7 @@
                 <label for="or1-d2" class="basket__radio"><i
                         class="radiobutton"></i><span>Подъем в квартиру на </span><input type="number"
                                                                                          class="form-input"
-                                                                                         value="17"><span>этаж при отсутствии лифта </span><span
+                                                                                         value="1"><span>этаж при отсутствии лифта </span><span
                         class="bold js-price-vip">650 &#8399;</span></label>
             </li>
             <li>
@@ -264,52 +269,56 @@
 <div id="or4" class="or hidden">
     <div class="form-row">
         <label class="form-label">Адрес почтомата</label>
-            <span class="vam js-post-address-bind">ул. Мясницко-Раменская д.12 кв.111 (<a href="javascript:void(0)"
+            <span class="vam js-post-address-bind">ул. Мясницкая д. 20 (<a href="javascript:void(0)"
                                                                                           class="dotted-link blue">изменить</a>)</span>
     </div>
     <div class="form-row">
-        <label class="form-label">День доставки в почтомат<span class="ast">*</span></label>
+        <label class="form-label">День доставки в почтомат<span class="ast"></span></label>
         <select id="or4-day1" class="form-select long-select">
             <option value="">Завтра, 22 февраля</option>
-            <option value="">Завтра, 23 февраля</option>
-            <option value="">Завтра, 24 февраля</option>
-            <option value="">Завтра, 25 февраля</option>
+            <option value="">Воскресенье, 23 февраля</option>
+            <option value="">Понедельник, 24 февраля</option>
+            <option value="">Вторник, 25 февраля</option>
+            <option value="">Среда, 26 февраля</option>
+            <option value="">Четверг, 27 февраля</option>
+            <option value="">Пятница, 28 февраля</option>
         </select>
-        <span class="vam alert hidden"><i></i><span>Вы забыли указать Ваш адрес</span></span>
     </div>
     <div class="form-row">
         <label class="form-label">Важная информация<span class="ast">!</span></label>
-            <span class="vam">Информация, необходимая для получения вашего заказа через почтомат (пин-код, адрес, информация о сроках
+            <span class="vam-2">Информация, необходимая для получения вашего заказа через почтомат (пин-код, адрес, информация о сроках
             получения заказа), будет отправлена вам на электронную почту и в SMS-сообщении.</span>
     </div>
 </div>
 <div id="or5" class="or hidden">
     <div class="form-row">
-        <label class="form-label">Удобное Вам метро</label>
+        <label class="form-label">Удобное вам метро</label>
         <select id="or5-metro" class="form-select long-select">
-            <option value="">Калуга</option>
-            <option value="">Барыга</option>
-            <option value="">Нефтезаводская</option>
-            <option value="">Пролетарская над гнездом кукушкинская</option>
+            <option value="">Пражская</option>
+            <option value="">Парк Победы</option>
+            <option value="">Автозаводская</option>
         </select>
     </div>
     <div class="form-row">
-        <label class="form-label">Адрес доставки<span class="ast">*</span></label>
+        <label class="form-label">Адрес самовывоза<span class="ast"></span></label>
             <span class="vam"><span class="js-metro-address-bind">ул. Мясницко-Раменская д.12 кв.111</span> (<a
-                    class="dotted-link blue">посмотреть на карте</a>)</span>
+                    class="dotted-link blue">изменить,посмотреть на карте</a>)</span>
     </div>
     <div class="form-row">
         <label class="form-label">День самовывоза<span class="ast">*</span></label>
         <select id="or5-day1" class="form-select long-select">
             <option value="">Завтра, 22 февраля</option>
-            <option value="">Завтра, 23 февраля</option>
-            <option value="">Завтра, 24 февраля</option>
-            <option value="">Завтра, 25 февраля</option>
+            <option value="">Воскресенье, 23 февраля</option>
+            <option value="">Понедельник, 24 февраля</option>
+            <option value="">Вторник, 25 февраля</option>
+            <option value="">Среда, 26 февраля</option>
+            <option value="">Четверг, 27 февраля</option>
+            <option value="">Пятница, 28 февраля</option>
         </select>
     </div>
     <div class="form-row">
         <label class="form-label">Важная информация<span class="ast">!</span></label>
-            <span class="vam">Прежде чем приехать в пункт самовывоза за своим заказом, узнайте о его готовности
+            <span class="vam-2">Прежде чем приехать в пункт самовывоза за своим заказом, узнайте о его готовности
                 у наших операторов. Вы сможете оплатить смтоимость товара и доставки заранее по безналичному расчету
                 или наличными прямо в пункте самовывоза.</span>
     </div>
@@ -317,7 +326,7 @@
 <hr class="grad">
 <div id="pr1" class="pr">
     <div class="form-row">
-        <label class="form-label radio-label">Способ оплаты<span class="ast">*</span></label>
+        <label class="form-label radio-label">Способ оплаты<span class="ast"></span></label>
         <ul class="list-none">
             <li>
                 <input id="pr1-b1" type="radio" name="pr1-r" checked hidden/>
@@ -355,7 +364,7 @@
             <li>
                 <input id="pr2-b3" type="radio" name="pr2-r" checked hidden/>
                 <label for="pr2-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
-                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+                        class="qst js-qst hint--top js-qst-card" data-hint="Картой онлайн"></i></label>
             </li>
             <li>
                 <input id="pr2-b4" type="radio" name="pr2-r" hidden/>
@@ -382,7 +391,7 @@
             <li>
                 <input id="pr3-b3" type="radio" name="pr3-r" checked hidden/>
                 <label for="pr3-b3" class="basket__radio"><i class="radiobutton"></i><span>Картой онлайн</span><i
-                        class="qst js-qst hint--top js-qst-card" data-hint="Это очень быстро приедем"></i></label>
+                        class="qst js-qst hint--top js-qst-card" data-hint="Картой онлайн"></i></label>
             </li>
             <li>
                 <input id="pr3-b4" type="radio" name="pr3-r" hidden/>
@@ -470,7 +479,7 @@
         <option id="partner1">&nbsp;</option>
         <option id="partner2">&nbsp;</option>
     </select>
-    <input type="text" class="form-input short-input" id="discount" value="" placeholder="46478 34834 9834 782">
+    <input type="text" class="form-input short-input" id="discount" value="" placeholder="6393 0000 1667 9625">
 </div>
 <hr class="dotted-line">
 <div class="form-footer clearfix">
@@ -510,27 +519,27 @@
                 <li>
                     <i class="footer-menu__item footer-menu__item-3 js-link"></i>
 
-                    <div>Доставка на следующий день</div>
+                    <div>Гарантированный обмен и возврат</div>
                 </li>
                 <li>
                     <i class="footer-menu__item footer-menu__item-4 js-link"></i>
 
-                    <div>Доставка на следующий день</div>
+                    <div>Оплата любыми способами</div>
                 </li>
                 <li>
                     <i class="footer-menu__item footer-menu__item-5 js-link"></i>
 
-                    <div>Доставка на следующий день</div>
+                    <div>Пункты самовывоза </div>
                 </li>
                 <li>
                     <i class="footer-menu__item footer-menu__item-6 js-link"></i>
 
-                    <div>Доставка на следующий день</div>
+                    <div>Подключение и установка</div>
                 </li>
                 <li>
                     <i class="footer-menu__item footer-menu__item-7 js-link"></i>
 
-                    <div>Доставка на следующий день</div>
+                    <div>Профессиональные консультанты</div>
                 </li>
             </ul>
         </div>

@@ -97,6 +97,12 @@ a {
 }
 
 .for-checkbox *, .vam {
+    line-height: normal;
+    vertical-align: middle;
+}
+
+.vam-2 {
+    line-height: normal !important;
     vertical-align: middle;
 }
 
@@ -105,7 +111,7 @@ a {
 }
 
 #selfy.checked {
-    background-color: #fff3cb;
+    background-color: #fff3cc;;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -154,11 +160,11 @@ ul.list-none {
 }
 
 .metro-pic#line-0 {
-    background-position: -380px -183px;
+    background-position: -476px -183px;
 }
 
 .metro-pic#line-1 {
-    background-position: -396px -183px;
+    background-position: -428px -183px;
 }
 
 .metro-pic#line-2 {
@@ -177,7 +183,7 @@ ul.list-none {
     cursor: pointer;
     width: 16px;
     height: 16px;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 .qst-popup {
@@ -187,10 +193,11 @@ ul.list-none {
     -moz-border-radius: 6px;
     border-radius: 6px;
     background-color: #ffffff;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 6px rgba(0,0,0,.4);
+    box-shadow: 0 1px 6px rgba(0,0,0,.4);
     font-size: 13px;
+    font-style: normal;
     padding: 10px 8px;
 }
 
@@ -818,7 +825,7 @@ hr.grad {
 }
 
 hr.dotted-line {
-    border-top: 2px dotted #cbcbcb;
+    border-top: 1px dashed #cbcbcb;
     border-bottom: 0px;
     border-left: 0 none transparent;
     border-right: 0 none transparent;
@@ -848,6 +855,7 @@ hr.dashed-line {
 }
 
 .footer__list li {
+    vertical-align: top;
     display: inline-block;
     width: 10%; /*for 7 elements*/
     margin-left: 2%;
@@ -866,76 +874,72 @@ hr.dashed-line {
 
 .footer-menu {
     margin-top: 20px;
-    margin-bottom: 35px;
     font-size: 0;
 }
 
 .footer-menu__item {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer-menu__item-1 {
-    background-position: -644px -4px;
-    width: 32px;
+    background-position: -640px 0px;
 }
 
 li:hover .footer-menu__item-1 {
-    background-position: -644px -44px;
+    background-position: -640px -40px;
 }
 
 .footer-menu__item-2 {
-    background-position: -684px -4px;
-    width: 32px;
+    background-position: -680px 0px;
 }
 
 li:hover .footer-menu__item-2 {
-    background-position: -684px -44px;
+    background-position: -680px -40px;
 }
 
 .footer-menu__item-3 {
-    background-position: -726px -4px;
-    width: 28px;
+    background-position: -720px 0px;
 }
 
 li:hover .footer-menu__item-3 {
-    background-position: -726px -44px;
+    background-position: -720px -40px;
 }
 
 .footer-menu__item-4 {
-    background-position: -762px -4px;
-    width: 36px;
+    background-position: -760px 0px;
 }
 
 li:hover .footer-menu__item-4 {
-    background-position: -762px -44px;
+    background-position: -760px -40px;
 }
 
 .footer-menu__item-5 {
-    background-position: -802px -4px;
+    background-position: -800px 0px;
 }
 
 li:hover .footer-menu__item-5 {
-    background-position: -802px -44px;
+    background-position: -800px -40px;
 }
 
 .footer-menu__item-6 {
-    background-position: -842px -4px;
+    background-position: -840px 0px;
 }
 
 li:hover .footer-menu__item-6 {
-    background-position: -842px -44px;
+    background-position: -840px -40px;
 }
 
 .footer-menu__item-7 {
-    background-position: -881px -4px;
+    background-position: -880px 0px;
 }
 
 li:hover .footer-menu__item-7 {
-    background-position: -881px -44px;
+    background-position: -880px -40px;
 }
 
 .footer__text {
+    margin-top: 36px;
     font-size: 10px;
     color: #333;
     text-align: center;
@@ -1002,7 +1006,7 @@ li:hover .footer-menu__item-7 {
 #loyal .chosen-single span {
     background-image: url("../images/partner.png");
     background-repeat: no-repeat;
-    background-position: 0 -89px;
+    background-position: 0 -88px;
 }
 
 #loyal .chosen-container .chosen-results li {
@@ -1015,11 +1019,11 @@ li:hover .footer-menu__item-7 {
 }
 
 #loyal .chosen-container .chosen-results li:nth-child(1) {
-    background-position: 0 -89px;
+    background-position: 0 -88px;
 }
 
 #loyal .chosen-container .chosen-results li:nth-child(2) {
-    background-position: 0 -116px;
+    background-position: 0 -115px;
 }
 
 .details {
@@ -1235,11 +1239,7 @@ li:hover .footer-menu__item-7 {
 
 .product__item__options {
     display: inline-block;
-    background-color: #fff3cb;
-    padding: 10px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    margin-top: 10px;
     font-size: 13px;
 }
 .product__item__left {
@@ -1439,7 +1439,7 @@ li:hover .footer-menu__item-7 {
 }
 
 .basket__desktop__credit__bg {
-    background-color: #fff3cb;
+    background-color: #fffae8;
     padding: 0 0 0 10px;
 }
 
