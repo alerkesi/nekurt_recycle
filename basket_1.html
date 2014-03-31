@@ -30,7 +30,7 @@
 			<span class="header__total">Сумма заказа <span
                     class="total-amount">58 000 &#8399;</span></span>
             <button class="button button-complete">Оформить</button>
-            <button class="button button-dark"><span
+            <button class="button button-dark js-oneclick-buy"><span
                     class="dotted-link">Купить в 1 клик</span></button>
         </div>
     </div>
@@ -636,7 +636,7 @@
 
     <div class="title catalog-title">Подберите себе крутой аксессуар<i></i></div>
     <div class="terms">Он точно не будет лишним и продлит жизнь вашей технике</div>
-    <ul class="list-none">
+    <ul class="list-none clearfix">
         <li class="catalog-item flt-l clearfix">
             <div class="flt-l catalog-item__left" style="text-align: center;">
                 <img class="catalog__photo" src="images/goods/4.png" alt=""/>
@@ -659,28 +659,65 @@
 
     </ul>
 </div>
-
-<div id="cities" style="display: none;" class="popup cities-popup">
+<div id="one-click-buy" class="popup oneclick-popup" style="display: none;">
     <a href="javascript:void(0)" class="popup-close"><i></i></a>
 
-    <div class="title cities-title">Выберите свой город<i></i></div>
-    <div class="terms">От вашего местоположения могут зависеть цены на товары и доставку</div>
-        <ul class="list-none line-big-list">
-            <li><input id="city-search" class="form-input" type="text" placeholder="Укажите название или выберите из списка"></li>
-            <li>
-                <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
-                <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
-            </li>
-            <li>
-                <input id="r2" type="radio" name="radio-bigcity" hidden/>
-                <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
-            </li>
-            <li>
-                <input id="r3" type="radio" name="radio-bigcity" hidden/>
-                <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
-            </li>
-        </ul>
-    <div>
+    <div class="title oneclick-title">Оставьте свой номер телефона<i></i></div>
+    <div class="terms">В течении 30 минут наш менеджер свяжется с вами и уточнит детали заказа</div>
+    <form class="basket__form">
+        <div class="form-row">
+            <label class="form-label">Имя<span class="ast">*</span></label>
+            <input required type="text" class="form-input short-input" placeholder="Василий" autofocus="">
+            <span class="vam alert hidden"><i></i><span>Вы забыли указать ваше имя</span></span>
+        </div>
+        <div class="form-row">
+            <label class="form-label">Номер телефона<span class="ast">*</span></label>
+            <input required type="tel" class="form-input short-input tel-input" placeholder="+7 (900) 876-00-01"
+                   pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}">
+            <span class="vam alert hidden"><i></i><span>Вы ошиблись или забыли указать свой номер телефона</span></span>
+        </div>
+    </form>
+    <hr class="dotted-line" style="margin-bottom: 12px">
+    <div class="clearfix">
+        <div class="flt-r confirm-area">
+            <div>
+                <span class="oneclick__total">Сумма заказа </span><span
+                    class="bold">78 180 &#8399;, </span>
+            </div>
+            <div>
+                <span class="terms">без учета стоимости доставки</span>
+            </div>
+            <a href="javascript:void(0)"><i class="middle-button-complete"></i></a>
+
+            <div class="terms">Нажимая кнопку «Завершить оформление» — вы соглашаетесь с <a
+                    class="link underline-link">Условиями
+                продажи товаров</a></div>
+        </div>
+    </div>
+</div>
+
+<div id="cities" style="display: none;" class="popup cities-popup">
+<a href="javascript:void(0)" class="popup-close"><i></i></a>
+
+<div class="title cities-title">Выберите свой город<i></i></div>
+<div class="terms">От вашего местоположения могут зависеть цены на товары и доставку</div>
+<ul class="list-none line-big-list">
+    <li><input id="city-search" class="form-input" type="text" placeholder="Укажите название или выберите из списка">
+    </li>
+    <li>
+        <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
+        <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
+    </li>
+    <li>
+        <input id="r2" type="radio" name="radio-bigcity" hidden/>
+        <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
+    </li>
+    <li>
+        <input id="r3" type="radio" name="radio-bigcity" hidden/>
+        <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
+    </li>
+</ul>
+<div>
     <div class="column-city">
         <ul class="list-none column-list">
             <span class="cities__char">А</span>
@@ -872,7 +909,7 @@
             <li><a href="javascript:void(0)" class="city-name underline-link bl">Ярославль</a></li>
         </ul>
     </div>
-    </div>
+</div>
 </div>
 </body>
 </html>

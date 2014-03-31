@@ -95,5 +95,10 @@ $(document).ready(function ($) {
       $('#all-br-items').show();
       $popupOut.show();
   });
+  $('.js-oneclick-buy').click(function(e){
+      e.stopPropagation();
+      $('#one-click-buy').show();
+      $popupOut.show();
+  })
 
 });
