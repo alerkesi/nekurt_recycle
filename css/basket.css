@@ -849,9 +849,9 @@ hr.bottom-line {
 }
 
 hr.dashed-line {
-    border-top: 1px dashed #cbcbcb;
+    border-top: 1px dashed #333333;
     height: 2px;
-    border-bottom: 1px dashed #cbcbcb;
+    border-bottom: 1px dashed #333333;
     border-left: 0 none transparent;
     border-right: 0 none transparent;
 }
