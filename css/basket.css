@@ -1114,7 +1114,7 @@ span.alert {
 }
 
 .order__list li:not(first-child) {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .order__list__item {
@@ -1133,8 +1133,9 @@ span.alert {
 }
 
 .order__list__item__sale, .order__list__price__sale {
-    font-size: 14px;
-    line-height: 14px;
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 13px;
     font-weight: bold;
 }
 
@@ -1147,7 +1148,8 @@ span.alert {
 }
 
 .order__total {
-    margin: 13px 0 18px;
+    margin: 13px 0;
+    font-size: 22px;
 }
 
 .order__details, .order__details-phone {
