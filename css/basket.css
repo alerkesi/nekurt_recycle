@@ -1663,17 +1663,17 @@ span.alert {
     right: 0;
     bottom: 0;
     z-index: 999;
-    overflow: auto;
-    overflow-y: scroll;
-    pointer-events: none;
 }
 .popup {
     width: 700px;
-    overflow: auto;
-
     position: absolute;
-    left: 10%;
-    top: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    top: 95px;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
     -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
@@ -1798,24 +1798,29 @@ span.alert {
 .column-city {
     width: 25%;
     float: left;
+    font-size: 13px;
 }
-
+.column-list li {
+    margin-bottom: 5px;
+}
 .column-list:not(:last-child) {
     margin-right: 1%;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 }
 
 .cities-popup {
     padding: 15px 15px 20px 30px;
-    height: 980px;
+    //height: 980px;
 }
 .cities-popup .basket__radio {
     padding: 5px 8px 7px 8px;
 }
 
 .cities__char {
-    font-size: 18px;
-    color: #333;
+    font-size: 16px;
+    color: #003;
+    margin-bottom: 8px;
+    display: block;
 }
 
 .pochtomat__list-item i {
