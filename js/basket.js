@@ -1,6 +1,5 @@
 $(document).ready(function ($) {
-    $popup = $('.popup-semantic');
-    $overlay = $('.overlay');
+    $popup = $('.popup-out');
     $popup.on('click', '.popup-close', function () {
         $popup.hide();
         });
