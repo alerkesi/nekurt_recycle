@@ -82,18 +82,19 @@ $(document).ready(function ($) {
     $(this).removeClass('alert');
     $(this).next().addClass('hidden');
   });
-  $('.js-post-address-bind').click(function(){
+  $('.js-post-address-bind').click(function(e){
+      e.stopPropagation();
       $('#pochtomat-map').show();
   });
   $('.tel-input').mask("+7 (999) 999-99-99");
-  $('.email-input').focusout(function(){
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test($(this).val())) {
-      $(this).addClass('alert');
-      $(this).next('.alert.hidden').show();
-    } else {
-      $(this).removeClass('alert');
-      $(this).next('.alert').hide();
-    }
-  })
+//  $('.email-input').focusout(function(){
+//    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//    if (!re.test($(this).val())) {
+//      $(this).addClass('alert');
+//      $(this).next('.alert.hidden').show();
+//    } else {
+//      $(this).removeClass('alert');
+//      $(this).next('.alert').hide();
+//    }
+//  })
 });

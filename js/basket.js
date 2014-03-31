@@ -1,8 +1,11 @@
 $(document).ready(function ($) {
-  $('.popup').on('click', '.popup-close', function () {
-    $(this).parent().hide();
-  });
-  $('.js-region').click(function(){
-    $('#cities').show();
-  });
+    $popup = $('.popup-semantic');
+    $overlay = $('.overlay');
+    $popup.on('click', '.popup-close', function () {
+        $popup.hide();
+        });
+    $('.js-region').click(function (e) {
+        e.stopPropagation();
+        $('#cities').show();
+    });
 });

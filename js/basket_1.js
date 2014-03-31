@@ -90,8 +90,9 @@ $(document).ready(function ($) {
     .on('click', '.deduct', function () {
       $(this).siblings('.counter__price').hide();
     });
-  $('.js-catalog-popup').click(function () {
-    $('#all-br-items').show();
+  $('.js-catalog-popup').click(function (e) {
+      e.stopPropagation();
+      $('#all-br-items').show();
   });
 
 });
