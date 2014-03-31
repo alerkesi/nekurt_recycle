@@ -93,6 +93,7 @@ $(document).ready(function ($) {
   $('.js-catalog-popup').click(function (e) {
       e.stopPropagation();
       $('#all-br-items').show();
+      $popupOut.show();
   });
 
 });

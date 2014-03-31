@@ -1,16 +1,19 @@
 $(document).ready(function ($) {
 
-    var popupOut = '<div class="popup-out" style="display: none;"></div>';
-    $('body').append(popupOut);
-
-    $popup = $('.popup');
+    $('body').append('<div class="popup-out" style="display: none;"></div>');
+    $popupOut = $('.popup-out');
+    $popupOut.click(function () {
+        $(this).hide();
+        $popup.hide();
+    });
+    var $popup = $('.popup');
     $popup.on('click', '.popup-close', function () {
         $popup.hide();
-        $('.popup-out').hide();
+        $popupOut.hide();
         });
     $('.js-region').click(function (e) {
         e.stopPropagation();
         $('#cities').show();
-        $('.popup-out').show();
+        $popupOut.show();
     });
 });
