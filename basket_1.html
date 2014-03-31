@@ -711,97 +711,221 @@
         </li>
     </ul>
 </div>
-<div id="cities" class="popup-semantic" style="display: none;">
-    <div class="popup-inner popup cities-popup">
 
-        <a href="javascript:void(0)" class="popup-close"><i></i></a>
+<div id="cities" class="popup-out" style="display: none;">
 
-        <div class="title cities-title">Выберите свой город<i></i></div>
-        <div class="terms">От вашего местоположения могу зависеть цены на товары и доставку</div>
-        <div>
-            <ul class="list-none line-big-list">
-                <li><input class="form-input" placeholder="Укажите название или выберите из списка"></li>
-                <li>
-                    <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
-                    <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
-                </li>
-                <li>
-                    <input id="r2" type="radio" name="radio-bigcity" hidden/>
-                    <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
-                </li>
-                <li>
-                    <input id="r3" type="radio" name="radio-bigcity" hidden/>
-                    <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="list-none column-list">
-                <span class="cities__char">А</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">Б</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">В</span>
-                <li><a href="javascript:void(0)" class="underline-link">Вымя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выхухололь</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Высамтакой</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выборг-обман</a></li>
-            </ul>
-            <ul class="list-none column-list">
-                <span class="cities__char">Г</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">Д</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">Е</span>
-                <li><a href="javascript:void(0)" class="underline-link">Вымя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выхухололь</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Высамтакой</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выборг-обман</a></li>
-            </ul>
-            <ul class="list-none column-list">
-                <span class="cities__char">Ж</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">З</span>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
-                <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
-            </ul>
-            <ul class="list-none">
-                <span class="cities__char">И</span>
-                <li><a href="javascript:void(0)" class="underline-link">Вымя</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выхухололь</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Высамтакой</a></li>
-                <li><a href="javascript:void(0)" class="underline-link">Выборг-обман</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="popup cities-popup">
+<a href="javascript:void(0)" class="popup-close"><i></i></a>
 
+<div class="title cities-title">Выберите свой город<i></i></div>
+<div class="terms">От вашего местоположения могут зависеть цены на товары и доставку</div>
+    <ul class="list-none line-big-list">
+        <li><input class="form-input" type="text" placeholder="Укажите название или выберите из списка"></li>
+        <li>
+            <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
+            <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
+        </li>
+        <li>
+            <input id="r2" type="radio" name="radio-bigcity" hidden/>
+            <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
+        </li>
+        <li>
+            <input id="r3" type="radio" name="radio-bigcity" hidden/>
+            <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
+        </li>
+    </ul>
+<div>
+<div class="column-city">
+    <ul class="list-none column-list">
+        <span class="cities__char">А</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Б</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">В</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Г</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Д</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Е</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">И</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+    </ul>
+</div>
+<div class="column-city">
+    <ul class="list-none column-list">
+        <span class="cities__char">К</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Л</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">М</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Н</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+    </ul>
+</div>
+<div class="column-city">
+    <ul class="list-none column-list">
+        <span class="cities__char">О</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">П</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Р</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анапа</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Абакан</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Анафема</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Антихрист</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">С</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бремен</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бухарест</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Бродяга</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Т</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+    </ul>
+</div>
+<div class="column-city">
+    <ul class="list-none column-list">
+        <span class="cities__char">У</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Х</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Ч</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Вымя</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выхухололь</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Высамтакой</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Выборг-обман</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Э</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Элиста</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Энгельс</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Ю</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Южно-Сахалинск</a></li>
+    </ul>
+    <ul class="list-none column-list">
+        <span class="cities__char">Я</span>
+        <li><a href="javascript:void(0)" class="underline-link bl">Якутск</a></li>
+        <li><a href="javascript:void(0)" class="underline-link bl">Ярославль</a></li>
+    </ul>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
