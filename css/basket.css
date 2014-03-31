@@ -1674,9 +1674,9 @@ span.alert {
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     top: 95px;
-    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
     z-index: 1000;
     background-color: #fff;
     border-radius: 6px;
@@ -1764,9 +1764,7 @@ span.alert {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .48);
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .48);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .48);;
+
 }
 
 .catalog-item {
