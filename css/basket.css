@@ -12,7 +12,9 @@
     margin: 0;
     padding: 0;
 }
-
+i {
+    font-style: normal;
+}
 /* for footer at the bottom of the page */
 html, body, .basket {
     height: 100%;
@@ -1886,12 +1888,12 @@ span.alert {
     font-size: 10px;
     color: #999;
     text-align: center;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
     background-color: #fff;
     border: 2px solid #37ab3e;
     margin-right: 7px;

@@ -91,8 +91,10 @@ $(document).ready(function ($) {
         e.stopPropagation();
         $('#selfy-map').show();
         $popupOut.fadeIn('slow');
+        $('.scroll-list').nicescroll();
     });
     $('.tel-input').mask("+7 (999) 999-99-99");
+
 //  $('.email-input').focusout(function(){
 //    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 //    if (!re.test($(this).val())) {
