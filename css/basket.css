@@ -111,6 +111,9 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.basket input:-moz-placeholder, .basket input:focus, .basket input  {
+    box-shadow:none !important;
+}
 
 .basket i, .btn {
     display: inline-block;
@@ -1613,24 +1616,6 @@ span.alert {
 .scroll-list-out {
     position: relative;
 }
-.scroll-list-out:after {
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-    height: 20px;
-    width: 89%;
-    font-size: 0;
-    background-color: rgba(255,255,238,0);
-    background-image: -webkit-linear-gradient(bottom, #fff, rgba(255,255,255,0));
-    background-image: -moz-linear-gradient(bottom, #fff, rgba(255,255,255,0));
-    background-image: -o-linear-gradient(bottom, #fff, rgba(255,255,255,0));
-    background-image: linear-gradient(to top, #fff, rgba(255,255,255,0));
-    background-image: -ms-linear-gradient(to top, #fff, rgba(255,255,255,0));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='@{#fff}', GradientType=1);
-}
 
 .basket__desktop__catalog {
     padding: 12px 0 12px;
@@ -1942,7 +1927,7 @@ li.pochtomat {
 .selfy-title {
     margin-bottom: 30px;
 }
-.selfy__list-item {
+.selfy__list-item, .pochtomat__list-item {
     margin-bottom: 5px;
 }
 
@@ -1972,7 +1957,6 @@ li.pochtomat {
 
 .catalog-item__name {
     font-size: 16px;
-    max-height: 62px;
 }
 
 .line-big-list li {
@@ -2032,6 +2016,8 @@ li.pochtomat {
     overflow-y: auto;
     height: 100%;
     position: relative;
+    scrollbar-highlight-color: #fff3cb;
+    scrollbar-face-color: #ffc302;
 }
 .pochtomat-popup .scroll-list {
     height: 625px;
@@ -2040,20 +2026,22 @@ li.pochtomat {
     height: 380px;
 }
 .scroll-list::-webkit-scrollbar {
-    //margin-right: -16px;
-    width: 16px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    margin-right: -16px;
+    width: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     background-color: #fff3cb;
 }
 .scroll-list::-webkit-scrollbar-thumb {
-    width: 16px;
-    height: 40px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
+    width: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     background-color: #ffc302;
+}
+.scroll-list::-webkit-scrollbar-button {
+
 }
 
 
