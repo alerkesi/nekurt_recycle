@@ -1942,6 +1942,9 @@ li.pochtomat {
 .selfy-title {
     margin-bottom: 30px;
 }
+.selfy__list-item {
+    margin-bottom: 5px;
+}
 
 .catalog-item {
     width: 335px;
