@@ -1771,7 +1771,9 @@ span.alert {
 .popup-close i:active {
     background-position: -412px -330px;
 }
-
+.catalog-title {
+    padding-left: 30px;
+}
 .catalog-title i {
     width: 24px;
     height: 35px;
@@ -1779,8 +1781,13 @@ span.alert {
     vertical-align: bottom;
     margin-left: 10px;
 }
-.catalog-popup__terms {
+.catalog-popup {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.catalog-terms {
     margin-bottom: 27px;
+    padding-left: 30px;
 }
 .catalog__photo {
     width: 140px;
@@ -1819,7 +1826,7 @@ span.alert {
 }
 
 .catalog-item {
-    width: 310px;
+    width: 335px;
     height: 170px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -1837,7 +1844,7 @@ span.alert {
 }
 
 .catalog-item__right {
-    width: 160px;
+    width: 185px;
     height: 100%;
 }
 
@@ -1918,7 +1925,7 @@ li.pochtomat {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
-    bottom: 0;
+    bottom: 5px;//(24/2 - 14/5)
 }
 
 .starbar_w {
