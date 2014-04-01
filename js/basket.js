@@ -11,28 +11,38 @@ $(document).ready(function ($) {
         $popup.hide();
         $popupOut.hide();
     });
+    var $cityCont = $('#cities');
     $('.js-region').click(function (e) {
         e.stopPropagation();
-        $('#cities').show();
+        $cityCont.show();
         $popupOut.show();
     });
     $('#city-search').keyup(function () {
         var regex = $(this).val().toLowerCase();
-        var $cities = $('.city-name');
+        var $cityGroup = $cityCont.find('.column-list');
 
-        if (regex === '') {
-            $cities.show();
-            return;
-        }
-        //$cities.hide();
-        $cities.each(function(){
-            if ($(this).text().toLowerCase().indexOf(regex) > -1) {
+        $cityGroup.each(function () {
+            var $citysG = $(this).find('.city-name');
+            var k = 0;
+            $citysG.each(function () {
+                if (regex === '' || $(this).text().toLowerCase().indexOf(regex) > -1) {
+                    $(this).show();
+                    k++;
+                } else {
+                    $(this).hide();
+                }
+            });
+            if (k > 0){
                 $(this).show();
-            } else {
-                $(this).hide();
-            }
-        })
-    })
+            } else $(this).hide();
+        });
+        if ($cityCont.find('.city-name:visible').length > 0) {
+            $cityCont.find('.no-city-results').hide();
+        } else {
+            $cityCont.find('.no-city-results').show();
+        }
+
+    });
     var hoverTimer;
     window.addEventListener('scroll', function () {
         clearTimeout(hoverTimer);
