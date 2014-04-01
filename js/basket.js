@@ -9,13 +9,13 @@ $(document).ready(function ($) {
     var $popup = $('.popup');
     $popup.on('click', '.popup-close', function () {
         $popup.hide();
-        $popupOut.hide();
+        $popupOut.fadeOut('slow');
     });
     var $cityCont = $('#cities');
     $('.js-region').click(function (e) {
         e.stopPropagation();
         $cityCont.show();
-        $popupOut.show();
+        $popupOut.fadeIn('slow');
     });
     $('#city-search').keyup(function () {
         var regex = $(this).val().toLowerCase();

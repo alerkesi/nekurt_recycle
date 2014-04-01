@@ -85,12 +85,12 @@ $(document).ready(function ($) {
     $('.js-post-address-bind').click(function (e) {
         e.stopPropagation();
         $('#pochtomat-map').show();
-        $popupOut.show();
+        $popupOut.fadeIn('slow');
     });
     $('.js-selfy-map').click(function (e) {
         e.stopPropagation();
         $('#selfy-map').show();
-        $popupOut.show();
+        $popupOut.fadeIn('slow');
     });
     $('.tel-input').mask("+7 (999) 999-99-99");
 //  $('.email-input').focusout(function(){

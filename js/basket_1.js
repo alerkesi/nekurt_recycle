@@ -93,12 +93,12 @@ $(document).ready(function ($) {
   $('.js-catalog-popup').click(function (e) {
       e.stopPropagation();
       $('#all-br-items').show();
-      $popupOut.show();
+      $popupOut.fadeIn('slow');
   });
   $('.js-oneclick-buy').click(function(e){
       e.stopPropagation();
       $('#one-click-buy').show();
-      $popupOut.show();
+      $popupOut.fadeIn('slow');
   })
 
 });
