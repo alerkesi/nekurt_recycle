@@ -1896,6 +1896,7 @@ li.pochtomat {
 }
 
 .starbar {
+    margin-top: 6px;
     width: 75px;
     height: 14px;
     background-position: -451px -145px;
