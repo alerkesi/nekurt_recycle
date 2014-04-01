@@ -34,6 +34,7 @@ body {
 .disable-hover {
     pointer-events: none;
 }
+
 .disable-hover * {
     pointer-events: none !important;
 }
@@ -537,15 +538,18 @@ input.promo {
 .big-button-complete:active {
     background-position: 0 -314px;
 }
+
 .middle-button-complete {
     margin: 6px 0;
     width: 280px;
     height: 40px;
     background-position: -640px -200px;
 }
+
 .middle-button-complete:hover {
     background-position: -640px -240px;
 }
+
 .middle-button-complete:active {
     background-position: -640px -280px;
 }
@@ -1574,6 +1578,27 @@ span.alert {
     background-image: -ms-linear-gradient(to left, #fff, rgba(241, 241, 241, 0));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='@{#fff}', GradientType=1);
 }
+.scroll-list-out {
+    position: relative;
+}
+.scroll-list-out:after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 89%;
+    font-size: 0;
+    background-color: rgba(255,255,238,0);
+    background-image: -webkit-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+    background-image: -o-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+    background-image: linear-gradient(to top, #fff, rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(to top, #fff, rgba(255,255,255,0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00FFFFFF', endColorstr='@{#fff}', GradientType=1);
+}
 
 .basket__desktop__catalog {
     padding: 12px 0 12px;
@@ -1640,11 +1665,13 @@ span.alert {
     background-image: linear-gradient(to top, #fff, #d5d5d5 50%, #fff);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5d5d5', endColorstr='@{#fff}', GradientType=1);
 }
+
 .bottom {
     position: absolute;
     bottom: 0;
     left: 0;
 }
+
 .bott {
     position: absolute;
     bottom: 0;
@@ -1724,9 +1751,11 @@ span.alert {
     -webkit-border-radius: 6px;
     padding: 10px 35px 20px 35px;
 }
+
 .oneclick-popup {
     height: 350px;
 }
+
 .oneclick-title i {
     width: 28px;
     height: 35px;
@@ -1734,15 +1763,19 @@ span.alert {
     vertical-align: bottom;
     margin-left: 10px;
 }
+
 .oneclick-popup .basket__form {
     padding: 0;
 }
+
 .oneclick-popup .form-row {
     padding-left: 145px;
 }
+
 .oneclick__total {
     font-size: 16px;
 }
+
 .oneclick-popup .confirm-area {
     width: 280px;
 }
@@ -1775,9 +1808,11 @@ span.alert {
 .popup-close i:active {
     background-position: -412px -330px;
 }
+
 .catalog-title {
     padding-left: 30px;
 }
+
 .catalog-title i {
     width: 24px;
     height: 35px;
@@ -1785,14 +1820,17 @@ span.alert {
     vertical-align: bottom;
     margin-left: 10px;
 }
+
 .catalog-popup {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 .catalog-terms {
     margin-bottom: 27px;
     padding-left: 30px;
 }
+
 .catalog__photo {
     width: 140px;
     height: 140px;
@@ -1911,8 +1949,41 @@ span.alert {
     margin-left: -5px;
     padding: 0 4px 1px 5px;
 }
+.scroll-list {
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
+.popup .scroll-list {
+    height: 625px;
+}
+.popup .scroll-list:after {
+
+}
+.scroll-list::-webkit-scrollbar {
+    //margin-right: -16px;
+    width: 16px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff3cb;
+}
+.scroll-list::-webkit-scrollbar-thumb {
+    width: 16px;
+    height: 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #ffc302;
+}
+.pochtomat__list-item i, .pochtomat__list-item a {
+    vertical-align: middle;
+}
 
 .pochtomat__list-item i {
+    font-size: 10px;
+    color: #999;
+    text-align: center;
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -1921,10 +1992,20 @@ span.alert {
     border-radius: 8px;
     background-color: #fff;
     border: 2px solid #37ab3e;
+    margin-right: 7px;
 }
 
 li.pochtomat {
     margin-bottom: 10px;
+}
+
+.pochtomat__address {
+    font-size: 13px;
+}
+
+.pochtomat__worktime {
+    font-size: 13px;
+    color: #999;
 }
 
 .starbar {
@@ -1938,7 +2019,7 @@ li.pochtomat {
     transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
-    bottom: 5px;//(24/2 - 14/5)
+    bottom: 5px;
 }
 
 .starbar_w {
