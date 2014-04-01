@@ -1,3 +1,13 @@
+/*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,*/
+/*em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,*/
+/*caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,*/
+/*ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}*/
+/*article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*/
+/*body{line-height:1}*/
+/*ol,ul{list-style:none}*/
+/*blockquote,q{quotes:none}*/
+/*blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}*/
+/*table{border-collapse:collapse;border-spacing:0}*/
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +29,13 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #333;
+}
+
+.disable-hover {
+    pointer-events: none;
+}
+.disable-hover * {
+    pointer-events: none !important;
 }
 
 .basket__container {
@@ -1684,7 +1701,7 @@ span.alert {
 }
 
 .popup {
-    width: 700px;
+    width: 702px;
     position: absolute;
     overflow: hidden;
     left: 50%;
@@ -1697,6 +1714,7 @@ span.alert {
     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
     z-index: 1000;
     background-color: #fff;
+    border: 1px solid #efefef;
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -1761,7 +1779,9 @@ span.alert {
     vertical-align: bottom;
     margin-left: 10px;
 }
-
+.catalog-popup__terms {
+    margin-bottom: 27px;
+}
 .catalog__photo {
     width: 140px;
     height: 140px;
@@ -1778,8 +1798,8 @@ span.alert {
 
 .pochtomat-title i {
     width: 35px;
-    height: 35px;
-    background-position: -763px -83px;
+    height: 31px;
+    background-position: -723px -85px;
     vertical-align: bottom;
     margin-left: 10px;
 }
@@ -1794,38 +1814,30 @@ span.alert {
 }
 
 .pochtomat-popup {
-    max-height: 500px;
-    overflow: auto;
-}
-
-.catalog-popup {
-    border: 1px solid #efefef;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    background-color: #fff;
-
+    height: 700px;
+    padding-right: 25px;
 }
 
 .catalog-item {
-    width: 340px;
+    width: 310px;
     height: 170px;
-    margin: 0 5px;
-
+    overflow: hidden;
+    margin-bottom: 25px;
 }
 
 .catalog-item:nth-child(2n) {
-    margin-left: 3%;
+    margin-left: 10px;
 }
 
 .catalog-item__left {
-    width: 45%;
-    text-align: center;
+    width: 140px;
     height: 100%;
+    margin-right: 10px;
+    position: relative;
 }
 
 .catalog-item__right {
-    width: 55%;
+    width: 160px;
     height: 100%;
 }
 
@@ -1901,6 +1913,12 @@ li.pochtomat {
     height: 14px;
     background-position: -451px -145px;
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    bottom: 0;
 }
 
 .starbar_w {
