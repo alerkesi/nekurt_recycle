@@ -129,9 +129,9 @@
                     class="bold js-price-self">100 &#8399;</span></label>
             <br>
             <ul class="list-none metro-list">
-                <li class="metro-list__item"><i id="line-0" class="metro-pic"></i><span>Пражская</span></li>
-                <li class="metro-list__item"><i id="line-1" class="metro-pic"></i><span>Парк победы</span></li>
-                <li class="metro-list__item"><i id="line-2" class="metro-pic"></i><span>Автозаводская</span></li>
+                <li class="metro-list__item"><i class="metro-pic line-0"></i><span>Пражская</span></li>
+                <li class="metro-list__item"><i class="metro-pic line-1"></i><span>Парк победы</span></li>
+                <li class="metro-list__item"><i class="metro-pic line-2"></i><span>Автозаводская</span></li>
             </ul>
         </li>
     </ul>
@@ -304,7 +304,7 @@
     <div class="form-row">
         <label class="form-label">Адрес самовывоза<span class="ast"></span></label>
             <span class="vam"><span class="js-metro-address-bind">ул. Мясницко-Раменская д.12 кв.111</span> (<a
-                    class="dotted-link blue">изменить,посмотреть на карте</a>)</span>
+                    class="dotted-link blue js-selfy-map">изменить,посмотреть на карте</a>)</span>
     </div>
     <div class="form-row">
         <label class="form-label">День самовывоза<span class="ast">*</span></label>
@@ -642,6 +642,41 @@
                     Lgibox</a></div>
                 <div class="pochtomat__address">Москва, ул. Тоска 1</div>
                 <div class="pochtomat__worktime">Ежедневно с 8 до 22:00</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="selfy-map" class="popup selfy-popup" hidden>
+    <a href="javascript:void(0)" class="popup-close"><i></i></a>
+
+    <div class="title selfy-title">Выберите удобный для вас адрес самовывоза<i></i></div>
+    <div id="YMapsID2" class="flt-l" style="width:475px;height:380px; margin-right: 18px;background-color: gray;"></div>
+    <div class="flt-r scroll-list-out" style="width: 145px;">
+        <ul class="list-none scroll-list">
+            <li class="selfy">
+                <div class="selfy__list-item"><i class="metro-pic line-0"></i><span class="dotted-link">Пражская</span></div>
+                <div class="selfy__address">Москва, ул. Тоска 1</div>
+                <div class="selfy__worktime">Ежедневно с 8 до 22:00</div>
+            </li>
+            <li class="selfy">
+                <div class="selfy__list-item"><i class="metro-pic line-1"></i><span class="dotted-link">Автозаводская</span></div>
+                <div class="selfy__address">ул. Кировоградская, д. 15, ТЦ «Электронный рай», павильон 2П2</div>
+                <div class="selfy__worktime">Ежедневно с 8 до 23:00</div>
+            </li>
+            <li class="selfy">
+                <div class="selfy__list-item"><i class="metro-pic line-2"></i><span class="dotted-link">Бульвар Адмирала Ушакова</span></div>
+                <div class="selfy__address">ул. Кировоградская, д. 15, ТЦ «Электронный рай», павильон 2П2</div>
+                <div class="selfy__worktime">Ежедневно с 8 до 23:00</div>
+            </li>
+            <li class="selfy">
+                <div class="selfy__list-item"><i class="metro-pic line-7"></i><span class="dotted-link">Бульвар Адмирала Ушакова</span></div>
+                <div class="selfy__address">ул. Кировоградская, д. 15, ТЦ «Электронный рай», павильон 2П2</div>
+                <div class="selfy__worktime">Ежедневно с 8 до 23:00</div>
+            </li>
+            <li class="selfy">
+                <div class="selfy__list-item"><i class="metro-pic line-12"></i><span class="dotted-link">Бульвар Адмирала Ушакова</span></div>
+                <div class="selfy__address">ул. Кировоградская, д. 15, ТЦ «Электронный рай», павильон 2П2</div>
+                <div class="selfy__worktime">Ежедневно с 8 до 23:00</div>
             </li>
         </ul>
     </div>

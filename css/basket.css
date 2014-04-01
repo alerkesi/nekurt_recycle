@@ -175,20 +175,52 @@ ul.list-none {
 .metro-pic {
     width: 16px;
     height: 10px;
-    background-position: -590px 183px;
     margin-right: 5px;
 }
 
-.metro-pic#line-0 {
+.metro-pic.line-0 {
     background-position: -476px -183px;
 }
 
-.metro-pic#line-1 {
+.metro-pic.line-1 {
     background-position: -428px -183px;
 }
 
-.metro-pic#line-2 {
+.metro-pic.line-2 {
     background-position: -412px -183px;
+}
+.metro-pic.line-3 {
+    background-position: -380px -183px;
+}
+
+.metro-pic.line-4 {
+    background-position: -396px -183px;
+}
+
+.metro-pic.line-5 {
+    background-position: -444px -183px;
+}
+.metro-pic.line-6 {
+    background-position: -460px -183px;
+}
+.metro-pic.line-7 {
+    background-position: -492px -183px;
+}
+.metro-pic.line-8 {
+    background-position: -508px -183px;
+}
+.metro-pic.line-9 {
+    background-position: -524px -183px;
+}
+.metro-pic.line-10 {
+    background-position: -540px -183px;
+}
+.metro-pic.line-11 {
+    background-position: -556px -183px;
+}
+.metro-pic.line-12 {
+    background-position: -572px -183px;
+
 }
 
 .metro-list__item {
@@ -1857,14 +1889,58 @@ span.alert {
     margin-bottom: 30px;
 }
 
-.pochtomat-list {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .pochtomat-popup {
     height: 700px;
     padding-right: 25px;
+}
+.pochtomat__list-item i, .pochtomat__list-item a {
+    vertical-align: middle;
+}
+
+.pochtomat__list-item i {
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 2px solid #37ab3e;
+    margin-right: 7px;
+}
+
+li.pochtomat {
+    margin-bottom: 10px;
+}
+
+.pochtomat__address, .selfy__address {
+    font-size: 13px;
+}
+
+.pochtomat__worktime,.selfy__worktime {
+    font-size: 13px;
+    color: #999;
+}
+.selfy {
+    margin-bottom: 10px;
+}
+.selfy-popup {
+    height: 490px;
+    padding-right: 25px;
+}
+.selfy-title i {
+    width: 35px;
+    height: 35px;
+    background-position: -763px -83px;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+.selfy-title {
+    margin-bottom: 30px;
 }
 
 .catalog-item {
@@ -1954,11 +2030,11 @@ span.alert {
     height: 100%;
     position: relative;
 }
-.popup .scroll-list {
+.pochtomat-popup .scroll-list {
     height: 625px;
 }
-.popup .scroll-list:after {
-
+.selfy-popup .scroll-list {
+    height: 380px;
 }
 .scroll-list::-webkit-scrollbar {
     //margin-right: -16px;
@@ -1976,37 +2052,7 @@ span.alert {
     border-radius: 6px;
     background-color: #ffc302;
 }
-.pochtomat__list-item i, .pochtomat__list-item a {
-    vertical-align: middle;
-}
 
-.pochtomat__list-item i {
-    font-size: 10px;
-    color: #999;
-    text-align: center;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    background-color: #fff;
-    border: 2px solid #37ab3e;
-    margin-right: 7px;
-}
-
-li.pochtomat {
-    margin-bottom: 10px;
-}
-
-.pochtomat__address {
-    font-size: 13px;
-}
-
-.pochtomat__worktime {
-    font-size: 13px;
-    color: #999;
-}
 
 .starbar {
     margin-top: 6px;
