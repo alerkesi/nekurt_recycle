@@ -1326,8 +1326,8 @@ span.alert {
 .product__item__art {
     font-size: 13px;
     color: #999;
-    margin-top: 5px;
-    margin-bottom: 3px;
+    height: 16px;
+    margin-top: 4px;
 }
 
 .product__item__options {
@@ -1459,7 +1459,8 @@ span.alert {
     color: #ffffff;
     font-size: 13px;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 6px;
 }
 
 .presence__yes {
