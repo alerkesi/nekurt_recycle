@@ -1,21 +1,33 @@
 $(document).ready(function ($) {
 
-    $('body').append('<div class="popup-out" style="display: none;"></div>');
+    var $popup = $('.popup');
     $popupOut = $('.popup-out');
     $popupOut.click(function () {
-        $(this).hide();
-        $popup.hide();
+        closePopup($(this));
     });
-    var $popup = $('.popup');
     $popup.on('click', '.popup-close', function () {
-        $popup.hide();
-        $popupOut.fadeOut('slow');
+        closePopup($popupOut);
     });
     var $cityCont = $('#cities');
     $('.js-region').click(function (e) {
         e.stopPropagation();
-        $cityCont.show();
-        $popupOut.fadeIn('slow');
+        openPopup($cityCont);
+    });
+    $('.js-catalog-popup').click(function (e) {
+        e.stopPropagation();
+        openPopup($('#all-br-items'));
+    });
+    $('.js-oneclick-buy').click(function(e){
+        e.stopPropagation();
+        openPopup($('#one-click-buy'));
+    });
+    $('.js-post-address-bind').click(function (e) {
+        e.stopPropagation();
+        openPopup($('#pochtomat-map'));
+    });
+    $('.js-selfy-map').click(function (e) {
+        e.stopPropagation();
+        openPopup($('#selfy-map'))
     });
     $('#city-search').keyup(function () {
         var regex = $(this).val().toLowerCase();
@@ -32,7 +44,7 @@ $(document).ready(function ($) {
                     $(this).hide();
                 }
             });
-            if (k > 0){
+            if (k > 0) {
                 $(this).show();
             } else $(this).hide();
         });
@@ -53,4 +65,21 @@ $(document).ready(function ($) {
             document.body.classList.remove('disable-hover');
         }, 500);
     }, false);
+    function openPopup($elem) {
+        var $p = $elem.find('.popup');
+        $p.show();
+        $p.scrollTop($(window).scrollTop());
+        $elem.fadeIn('slow');
+        if (!document.body.classList.contains('noscroll')) {
+            document.body.classList.add('noscroll');
+        }
+    }
+
+    function closePopup($elem) {
+        $elem.fadeOut('slow');
+        if (document.body.classList.contains('noscroll')) {
+            document.body.classList.remove('noscroll');
+        }
+    }
+
 });

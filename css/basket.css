@@ -1739,38 +1739,6 @@ span.alert {
     vertical-align: middle;
 }
 
-.popup-out {
-    position: fixed;
-    background-color: rgba(0, 0, 0, .5);
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-}
-
-.popup {
-    width: 702px;
-    position: absolute;
-    overflow: hidden;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    top: 95px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
-    z-index: 1000;
-    background-color: #fff;
-    border: 1px solid #efefef;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    padding: 10px 35px 20px 35px;
-}
 
 .oneclick-popup {
     height: 350px;
@@ -1842,8 +1810,8 @@ span.alert {
 }
 
 .catalog-popup {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
 }
 
 .catalog-terms {
@@ -1879,7 +1847,7 @@ span.alert {
 
 .pochtomat-popup {
     height: 700px;
-    padding-right: 25px;
+    padding-right: 25px!important;
 }
 .pochtomat__list-item i, .pochtomat__list-item a {
     vertical-align: middle;
@@ -1917,7 +1885,7 @@ li.pochtomat {
 }
 .selfy-popup {
     height: 490px;
-    padding-right: 25px;
+    padding-right: 25px!important;
 }
 .selfy-title i {
     width: 35px;
@@ -1987,7 +1955,7 @@ li.pochtomat {
 }
 
 .cities-popup {
-    padding: 15px 15px 20px 30px;
+    padding: 15px 15px 20px 30px!important;
 }
 
 .cities-popup .basket__radio {
@@ -2072,3 +2040,48 @@ li.pochtomat {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
+/* Popup styles */
+.noscroll {
+    overflow: hidden;
+}
+.popup-out {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+    zoom: 1;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.popup-out > * {
+    -webkit-transform: translateZ(0px);
+}
+
+.popup {
+    width: 702px;
+    position: absolute;
+    overflow: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    top: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 10px 35px 20px 35px;
+    margin: 100px 0;
+}
+/* end Popup styles */

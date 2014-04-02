@@ -632,7 +632,8 @@
         </div>
     </div>
 </footer>
-<div id="all-br-items" class="popup catalog-popup" style="display: none;">
+<div id="all-br-items" class="popup-out" style="display: none;">
+<div class="popup catalog-popup">
     <a href="javascript:void(0)" class="popup-close"><i></i></a>
 
     <div class="title catalog-title">Подберите себе крутой аксессуар<i></i></div>
@@ -793,7 +794,9 @@
 
     </ul>
 </div>
-<div id="one-click-buy" class="popup oneclick-popup" style="display: none;">
+</div>
+<div id="one-click-buy" class="popup-out" style="display: none;">
+<div class="popup oneclick-popup">
     <a href="javascript:void(0)" class="popup-close"><i></i></a>
 
     <div class="title oneclick-title">Оставьте свой номер телефона<i></i></div>
@@ -829,222 +832,224 @@
         </div>
     </div>
 </div>
-
-<div id="cities" style="display: none;" class="popup cities-popup">
-<a href="javascript:void(0)" class="popup-close"><i></i></a>
-
-<div class="title cities-title">Выберите свой город<i></i></div>
-<div class="terms">От вашего местоположения могут зависеть цены на товары и доставку</div>
-<ul class="list-none line-big-list">
-    <li><input id="city-search" class="form-input" type="text" placeholder="Укажите название или выберите из списка">
-    </li>
-    <li>
-        <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
-        <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
-    </li>
-    <li>
-        <input id="r2" type="radio" name="radio-bigcity" hidden/>
-        <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
-    </li>
-    <li>
-        <input id="r3" type="radio" name="radio-bigcity" hidden/>
-        <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
-    </li>
-</ul>
-<div>
-    <div class="column-city">
-        <ul class="list-none column-list">
-            <span class="cities__char">А</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Абакан</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Астрахань</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Алматы</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ангарск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Артем</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Архангельск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Анапа</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Б</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Братск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Бийск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Балаково</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Барнаул</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Белгород</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Благовещенск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Брянск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Биробиджан</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">В</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Великий Новгород</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Владикавказ</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Владимир</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Волгоград</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Вологда</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Владивосток</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Воронеж</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Г</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Горно-Алтайск</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Д</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Дзержинск</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Е</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Екатеринбург</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">И</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Иваново</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ижевск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Иркутск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Йошкар-Ола</a></li>
-        </ul>
-    </div>
-    <div class="column-city">
-        <ul class="list-none column-list">
-            <span class="cities__char">К</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Киров</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Кострома</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Казань</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Калуга</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Кемерово</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Комсомольск-на-Амуре</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Краснодар</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Курган</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Когалым</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Кызыл</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Курск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Красноярск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Калининград</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Л</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Липецк</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">М</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Мирный</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Магадан</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Магнитогорск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Майкоп</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Махачкала</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Минеральные Воды</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Мурманск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl selected-city">Москва и область</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Н</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Назрань</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Норильск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Набережные Челны</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нальчик</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Находка</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нерюнгри</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижневартовск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижний Новгород</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижний Тагил</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Новокузнецк</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Новороссийск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Новый Уренгой</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ноябрьск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нягань</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Новосибирск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижнекамск</a></li>
-        </ul>
-    </div>
-    <div class="column-city">
-        <ul class="list-none column-list">
-            <span class="cities__char">О</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Орск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Омск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Орел</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Оренбург</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">П</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Пенза</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Петрозаводск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Петропавловск-Камчатский</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Псков</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Пятигорск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Пермь</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Р</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ростов-на-Дону</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Рыбинск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Рязань</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">С</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Салехард</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Самара</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Саранск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Саратов</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Смоленск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Сочи</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ставрополь</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Старый Оскол</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Сургут</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Сыктывкар</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Санкт-Петербург</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Стерлитамак</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Т</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Таганрог</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Тамбов</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Тольятти</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Тюмень</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Тула</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Томск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Тверь</a></li>
-        </ul>
-    </div>
-    <div class="column-city">
-        <ul class="list-none column-list">
-            <span class="cities__char">У</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Улан-Удэ</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ульяновск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Усинск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Уссурийск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Уфа</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ухта</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Х</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Хабаровск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ханты-Мансийск</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Ч</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Чебоксары</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Челябинск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Череповец</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Черкесск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Чита</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Э</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Элиста</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Энгельс</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Ю</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Южно-Сахалинск</a></li>
-        </ul>
-        <ul class="list-none column-list">
-            <span class="cities__char">Я</span>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Якутск</a></li>
-            <li><a href="javascript:void(0)" class="city-name underline-link bl">Ярославль</a></li>
-        </ul>
-    </div>
 </div>
-<div class="terms no-city-results" style="display: none; color: #ff0000;">К сожалению, такого города в списке нет.</div>
+<div id="cities" class="popup-out" style="display: none;">
+    <div class="popup cities-popup">
+    <a href="javascript:void(0)" class="popup-close"><i></i></a>
+
+    <div class="title cities-title">Выберите свой город<i></i></div>
+    <div class="terms">От вашего местоположения могут зависеть цены на товары и доставку</div>
+    <ul class="list-none line-big-list">
+        <li><input id="city-search" class="form-input" type="text" placeholder="Укажите название или выберите из списка">
+        </li>
+        <li>
+            <input id="r1" type="radio" name="radio-bigcity" checked hidden/>
+            <label for="r1" class="basket__radio"><span class="underline-link bl">Москва</span></label>
+        </li>
+        <li>
+            <input id="r2" type="radio" name="radio-bigcity" hidden/>
+            <label for="r2" class="basket__radio"><span class="underline-link bl">Санкт-Петербург</span></label>
+        </li>
+        <li>
+            <input id="r3" type="radio" name="radio-bigcity" hidden/>
+            <label for="r3" class="basket__radio"><span class="underline-link bl">Тула</span></label>
+        </li>
+    </ul>
+    <div>
+        <div class="column-city">
+            <ul class="list-none column-list">
+                <span class="cities__char">А</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Абакан</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Астрахань</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Алматы</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ангарск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Артем</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Архангельск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Анапа</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Б</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Братск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Бийск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Балаково</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Барнаул</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Белгород</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Благовещенск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Брянск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Биробиджан</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">В</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Великий Новгород</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Владикавказ</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Владимир</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Волгоград</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Вологда</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Владивосток</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Воронеж</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Г</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Горно-Алтайск</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Д</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Дзержинск</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Е</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Екатеринбург</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">И</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Иваново</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ижевск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Иркутск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Йошкар-Ола</a></li>
+            </ul>
+        </div>
+        <div class="column-city">
+            <ul class="list-none column-list">
+                <span class="cities__char">К</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Киров</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Кострома</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Казань</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Калуга</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Кемерово</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Комсомольск-на-Амуре</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Краснодар</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Курган</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Когалым</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Кызыл</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Курск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Красноярск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Калининград</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Л</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Липецк</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">М</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Мирный</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Магадан</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Магнитогорск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Майкоп</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Махачкала</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Минеральные Воды</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Мурманск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl selected-city">Москва и область</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Н</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Назрань</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Норильск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Набережные Челны</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нальчик</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Находка</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нерюнгри</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижневартовск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижний Новгород</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижний Тагил</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Новокузнецк</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Новороссийск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Новый Уренгой</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ноябрьск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нягань</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Новосибирск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Нижнекамск</a></li>
+            </ul>
+        </div>
+        <div class="column-city">
+            <ul class="list-none column-list">
+                <span class="cities__char">О</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Орск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Омск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Орел</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Оренбург</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">П</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Пенза</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Петрозаводск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Петропавловск-Камчатский</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Псков</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Пятигорск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Пермь</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Р</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ростов-на-Дону</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Рыбинск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Рязань</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">С</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Салехард</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Самара</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Саранск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Саратов</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Смоленск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Сочи</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ставрополь</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Старый Оскол</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Сургут</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Сыктывкар</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Санкт-Петербург</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Стерлитамак</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Т</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Таганрог</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Тамбов</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Тольятти</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Тюмень</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Тула</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Томск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Тверь</a></li>
+            </ul>
+        </div>
+        <div class="column-city">
+            <ul class="list-none column-list">
+                <span class="cities__char">У</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Улан-Удэ</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ульяновск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Усинск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Уссурийск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Уфа</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ухта</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Х</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Хабаровск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ханты-Мансийск</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Ч</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Чебоксары</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Челябинск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Череповец</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Черкесск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Чита</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Э</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Элиста</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Энгельс</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Ю</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Южно-Сахалинск</a></li>
+            </ul>
+            <ul class="list-none column-list">
+                <span class="cities__char">Я</span>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Якутск</a></li>
+                <li><a href="javascript:void(0)" class="city-name underline-link bl">Ярославль</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="terms no-city-results" style="display: none; color: #ff0000;">К сожалению, такого города в списке нет.</div>
+    </div>
 </div>
 </body>
 </html>

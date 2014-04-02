@@ -82,17 +82,6 @@ $(document).ready(function ($) {
         $(this).removeClass('alert');
         $(this).next().addClass('hidden');
     });
-    $('.js-post-address-bind').click(function (e) {
-        e.stopPropagation();
-        $('#pochtomat-map').show();
-        $popupOut.fadeIn('slow');
-    });
-    $('.js-selfy-map').click(function (e) {
-        e.stopPropagation();
-        $('#selfy-map').show();
-        $popupOut.fadeIn('slow');
-        $('.scroll-list').nicescroll();
-    });
     $('.tel-input').mask("+7 (999) 999-99-99");
 
 //  $('.email-input').focusout(function(){

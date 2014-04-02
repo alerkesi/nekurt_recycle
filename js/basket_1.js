@@ -90,15 +90,6 @@ $(document).ready(function ($) {
     .on('click', '.deduct', function () {
       $(this).siblings('.counter__price').hide();
     });
-  $('.js-catalog-popup').click(function (e) {
-      e.stopPropagation();
-      $('#all-br-items').show();
-      $popupOut.fadeIn('slow');
-  });
-  $('.js-oneclick-buy').click(function(e){
-      e.stopPropagation();
-      $('#one-click-buy').show();
-      $popupOut.fadeIn('slow');
-  })
+
 
 });
