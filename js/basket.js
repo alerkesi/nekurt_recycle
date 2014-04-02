@@ -5,9 +5,13 @@ $(document).ready(function ($) {
     $popupOut.click(function () {
         closePopup($(this));
     });
-    $popup.on('click', '.popup-close', function () {
-        closePopup($popupOut);
-    });
+    $popup.
+        on('click', '.popup-close', function () {
+            closePopup($popupOut);
+        })
+        .on('click', function(e){
+            e.stopPropagation();
+        });
     var $cityCont = $('#cities');
     $('.js-region').click(function (e) {
         e.stopPropagation();
