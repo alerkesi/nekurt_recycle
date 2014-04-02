@@ -1846,7 +1846,6 @@ span.alert {
 }
 
 .pochtomat-popup {
-    height: 700px;
     padding-right: 25px!important;
 }
 .pochtomat__list-item i, .pochtomat__list-item a {
@@ -1990,10 +1989,7 @@ li.pochtomat {
     scrollbar-highlight-color: #fff3cb;
     scrollbar-face-color: #ffc302;
 }
-.pochtomat-popup .scroll-list {
-    height: 625px;
-}
-.selfy-popup .scroll-list {
+.pochtomat-popup .scroll-list, .selfy-popup .scroll-list {
     height: 380px;
 }
 .scroll-list::-webkit-scrollbar {
