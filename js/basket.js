@@ -17,7 +17,7 @@ $(document).ready(function ($) {
         e.stopPropagation();
         openPopup($('#all-br-items'));
     });
-    $('.js-oneclick-buy').click(function(e){
+    $('.js-oneclick-buy').click(function (e) {
         e.stopPropagation();
         openPopup($('#one-click-buy'));
     });
